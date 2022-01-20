@@ -76,17 +76,17 @@ const About = () => {
                 data-aos-delay="200"
               ></div>
 
-              <div
+              {/* <div
                 className="experience"
                 data-aos="fade-up"
                 data-aos-duration="1200"
                 data-aos-delay="300"
-              >
-                <div className="info">
+              > */}
+                {/* <div className="info">
                   <h3>6+ Years</h3>
                   <span>Of Experiance</span>
-                </div>
-              </div>
+                </div> */}
+              {/* </div> */}
             </div>
           </div>
           {/* End righttpart */}

@@ -629,8 +629,8 @@ body.dark .loader_line:after {
 }
 .edina_tm_hero .image {
   display: inline-block;
-  width: 300px;
-  height: 300px;
+  width: 500px;
+  height: 500px;
   border-radius: 100%;
   position: relative;
   margin-bottom: 27px;
@@ -648,7 +648,7 @@ body.dark .loader_line:after {
   right: 0px;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: auto;
   border-radius: 100%;
 }
 .edina_tm_hero .image:before {
@@ -709,8 +709,8 @@ body.dark .loader_line:after {
   svg {
     fill: transparent;
     color: #888;
-    width: 22px;
-    height: 22px;
+    width: 32px;
+    height: 32px;
   }
 }
 .edina_tm_hero .social ul li a:after {

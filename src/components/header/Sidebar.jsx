@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import ScrollspyNav from "react-scrollspy-nav";
 
 // logo name
-const logo = "dark";
-const logo2 = "light";
+const logo = "light";
+// const logo2 = "light";
 
 // sidebar content
 const sidebarContent = [
@@ -24,11 +24,10 @@ const sidebarContent = [
   },
   {
     icon: "testimonial",
-    itemName: "Testimonial",
-    itemRoute: "#testimonial",
+    itemName: "Testimonials",
+    itemRoute: "#testimonials",
     activeClass: "",
   },
-  { icon: "blog", itemName: "Blog", itemRoute: "#blog", activeClass: "" },
   {
     icon: "contact",
     itemName: "Contact",
@@ -40,9 +39,9 @@ const sidebarContent = [
 // sidebar footer bottom content
 const sidebarFooterContent = {
   avatar: "img/about/avatar.jpg",
-  name: "Nelson",
+  name: "Help",
   email: "support@gmail.com",
-  emailRef: "mailto:ib-themes21@gmail.com",
+  emailRef: "mailto:robfuss17@gmail.com",
 };
 
 const Sidebar = () => {
@@ -68,12 +67,12 @@ const Sidebar = () => {
             <Link to="/">
               <img
                 className="logo_dark"
-                src={`img/logo/${logo}.png`}
+                src={`img/logo/${logo}.svg`}
                 alt="brand"
               />
               <img
                 className="logo_light"
-                src={`img/logo/${logo2}.png`}
+                src={`img/logo/${logo}.png`}
                 alt="brand"
               />
             </Link>
@@ -87,8 +86,7 @@ const Sidebar = () => {
                 "about",
                 "service",
                 "portfolio",
-                "testimonial",
-                "blog",
+                "testimonials",
                 "contact",
               ]}
               activeNavClass="active"

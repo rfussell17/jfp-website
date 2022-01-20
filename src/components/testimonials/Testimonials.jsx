@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-export default function Testimonial() {
+export default function Testimonials() {
   var settings = {
     dots: true,
     arrow: false,

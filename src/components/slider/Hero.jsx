@@ -3,11 +3,11 @@ import Social from "../Social";
 
 const heroContent = {
   shapeImage: "hero-shape",
-  heroImage: "2",
-  name: "Rokers Nelson",
-  description: `I'm a Freelancer Front-end React Developer with over 6 years of
-  professional experience in this field.`,
+  heroImage: "light",
+  name: "",
+  description: `I'm a freelance photographer living in beautiful British Columbia`,
 };
+
 
 const Hero = () => {
   return (
@@ -15,10 +15,11 @@ const Hero = () => {
     <div className="edina_tm_hero" id="home">
       <div className="content">
         <div className="img-shape" data-aos="fade-up" data-aos-duration="1200">
-          <img
+          <img 
+            className="hero-img-main"
             src={`img/hero/${heroContent.shapeImage}`}
-            srcSet={`img/hero/${heroContent.heroImage}.jpg`}
-            alt="hero image"
+            srcSet={`img/hero/${heroContent.heroImage}.png`}
+            alt="Johnny Fussell Photography logo"
           />
         </div>
         <div className="extra">
@@ -47,16 +48,7 @@ const Hero = () => {
           >
             <Social />
           </div>
-          <div
-            className="edina_tm_button"
-            data-aos="fade-up"
-            data-aos-duration="1200"
-            data-aos-delay="400"
-          >
-            <a href="img/cv.png" download className="color">
-              Download CV
-            </a>
-          </div>
+
         </div>
       </div>
     </div>
