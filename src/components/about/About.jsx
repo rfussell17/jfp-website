@@ -1,15 +1,10 @@
 import React, { useState } from "react";
-import Skills from "../skills/Skills";
-import Modal from "react-modal";
-import ModalContent from "./modal/ModalContent";
-
-Modal.setAppElement("#root");
 
 const About = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  function toggleModalOne() {
-    setIsOpen(!isOpen);
-  }
+  // const [isOpen, setIsOpen] = useState(false);
+  // function toggleModalOne() {
+  //   setIsOpen(!isOpen);
+  // }
 
   return (
     //    ABOUT
@@ -27,36 +22,27 @@ const About = () => {
           >
             <div className="info">
               <h3>
-                Hi, I'm <span>Rokers Nelson</span>
+                Hi, I'm <span>Johnny</span>
               </h3>
               <p>
-                I'm a Freelancer Front-end Developer with over 6 years of
-                experience. I'm from San Francisco. I code and create web
-                elements for amazing people around the world. I like work with
-                new people.
+I'm a lifestyle photographer based out of Kelowna, BC.
+<br></br>
+I’ve been passionate about photography for over 7 years, but this last year I decided I wanted to work towards doing this thing I love full time. 
+<br></br>
+
+<br></br>
+I <strong>LOVE</strong> that you are always learning no matter how long you have been doing it!
+<br></br>
+I <strong>LOVE</strong> doing landscape/cityscape photography! It keeps me inspired to keep pushing my creative boundaries!
+<br></br>
+I <strong>LOVE</strong> the photography community! 
+<br></br>
+<br></br>
+The support - both online, and in my city - has been amazing, and there are so many unbelievable creators that always keep me motivated to get out and take pictures and stand out! Not to mention so many talented photographers that I have the opportunity to surround myself with.
+
               </p>
             </div>
-            <div className="my_skills">
-              <h3 className="title">What is my skill level?</h3>
-              <p className="desc">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-                ipsum sit nibh amet egestas tellus.
-              </p>
-              <div className="wrapper">
-                <div className="dodo_progress">
-                  <Skills />
-                </div>
-              </div>
-              <div className="edina_tm_button">
-                <button
-                  type="submit"
-                  className="color"
-                  onClick={toggleModalOne}
-                >
-                  More About Me
-                </button>
-              </div>
-            </div>
+        
           </div>
           {/* End leftpart */}
 
@@ -68,7 +54,7 @@ const About = () => {
                 className="main"
                 style={{
                   backgroundImage: `url(${
-                    process.env.PUBLIC_URL + "img/about/2.jpg"
+                    process.env.PUBLIC_URL + "img/about/about.jpg"
                   })`,
                 }}
                 data-aos="fade-left"
@@ -94,29 +80,7 @@ const About = () => {
       </div>
 
       {/* Start About Details Modal */}
-      <Modal
-        isOpen={isOpen}
-        onRequestClose={toggleModalOne}
-        contentLabel="My dialog"
-        className="custom-modal about-popup-wrapper"
-        overlayClassName="custom-overlay "
-        closeTimeoutMS={500}
-      >
-        <div className="edina_tm_modalbox">
-          <button className="close-modal" onClick={toggleModalOne}>
-            <img src="/img/svg/cancel.svg" alt="close icon" />
-          </button>
-          {/* End close icon */}
 
-          <div className="box_inner">
-            <div className="description_wrap scrollable">
-              <ModalContent />
-            </div>
-          </div>
-          {/* End box inner */}
-        </div>
-        {/* End modal box news */}
-      </Modal>
       {/* End  About Details Modal */}
     </div>
     // /ABOUT
