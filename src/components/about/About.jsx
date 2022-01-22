@@ -50,9 +50,10 @@ const About = () => {
               <div
                 className="main"
                 style={{
-                  backgroundImage: `url(${
+                    backgroundImage: `url(${
                     process.env.PUBLIC_URL + "img/about/about.jpg"
                   })`,
+                  
                 }}
                 data-aos="fade-left"
                 data-aos-duration="1200"
