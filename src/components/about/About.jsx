@@ -45,13 +45,13 @@ const About = () => {
 
           <div className="rightpart">
             <div className="image">
-              <img src="img/thumbs/26-35.jpg" alt="thumb" />
+              <img src="img/about/2.jpeg" alt="thumb" />
 
               <div
                 className="main"
                 style={{
                     backgroundImage: `url(${
-                    process.env.PUBLIC_URL + "img/about/about.jpg"
+                    process.env.PUBLIC_URL + "img/about/2.jpeg"
                   })`,
                   
                 }}
