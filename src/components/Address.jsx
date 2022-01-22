@@ -13,10 +13,7 @@ const Address = () => {
             <h3>Phone</h3>
             <ul>
               <li>
-                <a href="Tel: +452 666 386">+452 666 386</a>
-              </li>
-              <li>
-                <a href="Tel: +465 562 226">+465 562 226</a>
+                <a href="Tel: +778-363-0381">+778-363-0381</a>
               </li>
             </ul>
           </div>{" "}
@@ -33,10 +30,7 @@ const Address = () => {
             <h3>Email</h3>
             <ul>
               <li>
-                <a href="mailto:ib-themes21@gmail.com">support@gmail.com</a>
-              </li>
-              <li>
-                <a href="mailto:ib-themes21@gmail.com">example@support.com</a>
+                <a href="mailto:jonnyfussell@gmail.com">jonnyfussell@gmail.com</a>
               </li>
             </ul>
           </div>{" "}
@@ -46,18 +40,15 @@ const Address = () => {
       <li data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">
         <div className="list_inner">
           <div className="icon">
-            <img src="img/address/location.png" alt="icon" />
+            <img src="img/address/instagram-brands.svg" alt="icon" />
           </div>
           {/* End icon */}
           <div className="content">
-            <h3>Address</h3>
+            <h3>Instagram</h3>
             <ul>
               <li>
-                <p>
-                  Envato 121 King St,
-                  <br />
-                  Melbourne, Australia
-                </p>
+              <a href="https://www.instagram.com/jonny.fussell.photography">jonny.fussell.photography</a>
+             
               </li>
             </ul>
           </div>

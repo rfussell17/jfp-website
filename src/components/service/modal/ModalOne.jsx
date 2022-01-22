@@ -4,12 +4,12 @@ const ModalOne = () => {
   return (
     <div className="popup_informations">
       <div className="image">
-        <img src="img/thumbs/4-3.jpg" alt="" />
+        <img src="img/service/1.jpg" alt="" />
         <div
           className="main"
           style={{
             backgroundImage: `url(${
-              process.env.PUBLIC_URL + "img/service/1.jpg"
+              process.env.PUBLIC_URL + "img/service/6.jpeg"
             })`,
           }}
         ></div>
@@ -17,48 +17,63 @@ const ModalOne = () => {
       {/* End big image */}
 
       <div className="description">
-        <h3>Motion Graphic Breakdown In Cinema 4D</h3>
+        <h3>Wedding Packages</h3>
         <p>
-          Just because we can't get out and about like we normally would,
-          doesn’t mean we have to taking pictures. There’s still plenty you can
-          do, provided you're prepared to use some imagination. Here are a few
-          ideas to keep you shooting until normal life resumes.
+          All wedding packages offer an engagement session free of charge. A deposit of $500 is required to book weddings.
         </p>
-        <p>
-          Most photographers love to shoot the unusual, and you don’t get much
-          more unusual than These Unprecedented Times. Right now everything
-          counts as out of the ordinary. There are a number of remarkable things
-          about these lockdown days that are worth photographing now we can
-          remember them when it is all over.
-        </p>
-        <h3>What Is Branding?</h3>
-        <p>
-          Nullam blandit constituto eam ne, te nam ignota vituper.atoribus.
-          Malis cetero quem saipe, prou thendrerit voluptaria.
-        </p>
+
+        <h3>Bronze Package</h3>
+
         <div className="in_list">
           <ul>
             <li>
-              <p>Email is a crucial channel in any marketing.</p>
+              <p>4 hour wedding day coverage with myself + associate photographer</p>
             </li>
             <li>
-              <p>Curious what to say? How to say it?</p>
+              <p>Minimum 250 photos delivered by online gallery</p>
             </li>
             <li>
-              <p>Whether you’re kicking off a new ca mpaign.</p>
-            </li>
-            <li>
-              <p>Habitasse per feugiat aliquam luctus accumsan curae</p>
+              <p><strong>$1200</strong></p>
             </li>
           </ul>
         </div>
+
+        <h3>Silver Package</h3>
+
+        <div className="in_list">
+          <ul>
+            <li>
+              <p>6 hour wedding day coverage with myself + associate photographer</p>
+            </li>
+            <li>
+              <p>Minimum 500 photos delivered by online gallery</p>
+            </li>
+            <li>
+              <p><strong>$1800</strong></p>
+            </li>
+          </ul>
+        </div>
+
+        <h3>Gold Package</h3>
+
+        <div className="in_list">
+          <ul>
+            <li>
+              <p>Full wedding day coverage with myself + associate photographer</p>
+            </li>
+            <li>
+              <p>Minimum 500 photos delivered by online gallery</p>
+            </li>
+            <li>
+              <p><strong>$2500</strong></p>
+            </li>
+          </ul>
+        </div>
+
+
         {/* End list */}
         <p>
-          Streets empty that are usually busy are remarkable and can evoke the
-          sense of historical pictures from before the invention of the
-          motorcar. Other things that are different at the moment will be queues
-          to get into stores and the lines marked out on the floor to show how
-          far apart we should be.
+         <strong>Please contact me for bookings and any other questions</strong> 
         </p>
       </div>
     </div>

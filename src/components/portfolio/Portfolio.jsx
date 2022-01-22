@@ -36,19 +36,13 @@ const Portfolio = () => {
           <li>
             <div className="list_inner">
               <div className="image">
-                <a
-                  href="https://www.behance.net/ib-themes"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="details"
-                >
                   <img
-                    src="img/portfolio/1.jpg"
+                    src="img/portfolio/6.jpeg"
                     data-tip
                     data-for="product"
                     alt="portfolio"
                   />
-                  <ReactTooltip
+                  {/* <ReactTooltip
                     id="product"
                     place="bottom"
                     type="light"
@@ -56,11 +50,11 @@ const Portfolio = () => {
                     className="tooltip-wrapper"
                   >
                     <div>
-                      <h5>Behance Profile</h5>
+                      <h5>Wedding</h5>
                       <span>Product</span>
                     </div>
-                  </ReactTooltip>
-                </a>
+                  </ReactTooltip> */}
+            
               </div>
             </div>
           </li>
@@ -69,19 +63,13 @@ const Portfolio = () => {
           <li>
             <div className="list_inner">
               <div className="image">
-                <a
-                  href="https://dribbble.com/ib-themes"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="details"
-                >
                   <img
-                    src="img/portfolio/2.jpg"
+                    src="img/portfolio/2.jpeg"
                     data-tip
                     data-for="dribbble"
                     alt="portfolio"
                   />
-                  <ReactTooltip
+                  {/* <ReactTooltip
                     id="dribbble"
                     place="bottom"
                     type="light"
@@ -92,8 +80,7 @@ const Portfolio = () => {
                       <h5>Dribbble Shot</h5>
                       <span>Dribbble</span>
                     </div>
-                  </ReactTooltip>
-                </a>
+                  </ReactTooltip> */}
               </div>
             </div>
           </li>
@@ -102,19 +89,13 @@ const Portfolio = () => {
           <li>
             <div className="list_inner">
               <div className="image">
-                <a
-                  href="https://www.facebook.com/ibthemes/?show_switched_toast=0&show_switched_tooltip=0&show_podcast_settings=0"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="details"
-                >
                   <img
-                    src="img/portfolio/3.jpg"
+                    src="img/portfolio/3.jpeg"
                     data-tip
                     data-for="facebook"
                     alt="portfolio"
                   />
-                  <ReactTooltip
+                  {/* <ReactTooltip
                     id="facebook"
                     place="bottom"
                     type="light"
@@ -125,8 +106,7 @@ const Portfolio = () => {
                       <h5>Facebook Shot</h5>
                       <span>Facebbok</span>
                     </div>
-                  </ReactTooltip>
-                </a>
+                  </ReactTooltip> */}
               </div>
             </div>
           </li>
@@ -135,19 +115,13 @@ const Portfolio = () => {
           <li>
             <div className="list_inner">
               <div className="image">
-                <a
-                  href="https://www.youtube.com/channel/UC09n4DQMWRMURVw1ZlBoHKg/videos"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="details"
-                >
                   <img
-                    src="img/portfolio/4.jpg"
+                    src="img/portfolio/4.jpeg"
                     data-tip
                     data-for="youtube"
                     alt="portfolio"
                   />
-                  <ReactTooltip
+                  {/* <ReactTooltip
                     id="youtube"
                     place="bottom"
                     type="light"
@@ -158,8 +132,7 @@ const Portfolio = () => {
                       <h5>Youtube Shot</h5>
                       <span>Youtube</span>
                     </div>
-                  </ReactTooltip>
-                </a>
+                  </ReactTooltip> */}
               </div>
             </div>
           </li>
@@ -168,19 +141,63 @@ const Portfolio = () => {
           <li>
             <div className="list_inner">
               <div className="image">
-                <a
-                  href="https://dribbble.com/shots/16529407-Deski-Saas-Software-React-Template"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="details"
-                >
                   <img
-                    src="img/portfolio/5.jpg"
+                    src="img/portfolio/10.jpeg"
+                    data-tip
+                    data-for="youtube"
+                    alt="portfolio"
+                  />
+                  {/* <ReactTooltip
+                    id="youtube"
+                    place="bottom"
+                    type="light"
+                    effect="float"
+                    className="tooltip-wrapper"
+                  >
+                    <div>
+                      <h5>Youtube Shot</h5>
+                      <span>Youtube</span>
+                    </div>
+                  </ReactTooltip> */}
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div className="list_inner">
+              <div className="image">
+                  <img
+                    src="img/portfolio/1.jpeg"
+                    data-tip
+                    data-for="youtube"
+                    alt="portfolio"
+                  />
+                  {/* <ReactTooltip
+                    id="youtube"
+                    place="bottom"
+                    type="light"
+                    effect="float"
+                    className="tooltip-wrapper"
+                  >
+                    <div>
+                      <h5>Youtube Shot</h5>
+                      <span>Youtube</span>
+                    </div>
+                  </ReactTooltip> */}
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div className="list_inner">
+              <div className="image">
+                  <img
+                    src="img/portfolio/7.jpeg"
                     data-tip
                     data-for="web"
                     alt="portfolio"
                   />
-                  <ReactTooltip
+                  {/* <ReactTooltip
                     id="web"
                     place="bottom"
                     type="light"
@@ -191,12 +208,139 @@ const Portfolio = () => {
                       <h5>Web Apps Shot</h5>
                       <span>Web Apps</span>
                     </div>
-                  </ReactTooltip>
-                </a>
+                  </ReactTooltip> */}
               </div>
             </div>
           </li>
           {/* End li */}
+
+          <li>
+            <div className="list_inner">
+              <div className="image">
+                  <img
+                    src="img/portfolio/12.jpeg"
+                    data-tip
+                    data-for="youtube"
+                    alt="portfolio"
+                  />
+                  {/* <ReactTooltip
+                    id="youtube"
+                    place="bottom"
+                    type="light"
+                    effect="float"
+                    className="tooltip-wrapper"
+                  >
+                    <div>
+                      <h5>Youtube Shot</h5>
+                      <span>Youtube</span>
+                    </div>
+                  </ReactTooltip> */}
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div className="list_inner">
+              <div className="image">
+                  <img
+                    src="img/portfolio/9.jpeg"
+                    data-tip
+                    data-for="youtube"
+                    alt="portfolio"
+                  />
+                  {/* <ReactTooltip
+                    id="youtube"
+                    place="bottom"
+                    type="light"
+                    effect="float"
+                    className="tooltip-wrapper"
+                  >
+                    <div>
+                      <h5>Youtube Shot</h5>
+                      <span>Youtube</span>
+                    </div>
+                  </ReactTooltip> */}
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div className="list_inner">
+              <div className="image">
+                  <img
+                    src="img/portfolio/15.jpeg"
+                    data-tip
+                    data-for="youtube"
+                    alt="portfolio"
+                  />
+                  {/* <ReactTooltip
+                    id="youtube"
+                    place="bottom"
+                    type="light"
+                    effect="float"
+                    className="tooltip-wrapper"
+                  >
+                    <div>
+                      <h5>Youtube Shot</h5>
+                      <span>Youtube</span>
+                    </div>
+                  </ReactTooltip> */}
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div className="list_inner">
+              <div className="image">
+                  <img
+                    src="img/portfolio/5.jpeg"
+                    data-tip
+                    data-for="youtube"
+                    alt="portfolio"
+                  />
+                  {/* <ReactTooltip
+                    id="youtube"
+                    place="bottom"
+                    type="light"
+                    effect="float"
+                    className="tooltip-wrapper"
+                  >
+                    <div>
+                      <h5>Youtube Shot</h5>
+                      <span>Youtube</span>
+                    </div>
+                  </ReactTooltip> */}
+              </div>
+            </div>
+          </li>
+      
+
+          <li>
+            <div className="list_inner">
+              <div className="image">
+                  <img
+                    src="img/portfolio/13.jpeg"
+                    data-tip
+                    data-for="youtube"
+                    alt="portfolio"
+                  />
+                  {/* <ReactTooltip
+                    id="youtube"
+                    place="bottom"
+                    type="light"
+                    effect="float"
+                    className="tooltip-wrapper"
+                  >
+                    <div>
+                      <h5>Youtube Shot</h5>
+                      <span>Youtube</span>
+                    </div>
+                  </ReactTooltip> */}
+              </div>
+            </div>
+          </li>
+
+
         </Slider>
       </ul>
     </div>

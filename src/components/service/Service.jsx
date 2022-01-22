@@ -35,9 +35,10 @@ const Service = () => {
           <Tilt>
             <div className="list_inner" onClick={toggleModalOne}>
               <div className="hover">
-                <img className="svg custom" src="img/svg/1.svg" alt="" />
+                <img className="svg custom" src="img/svg/2.svg" alt="" />
+               
                 <div className="service_title">
-                  <h3>Motion & Web Graphy</h3>
+                  <h3>Wedding Packages</h3>
                 </div>
                 <div className="learn_more">
                   Learn More<span></span>
@@ -53,9 +54,9 @@ const Service = () => {
           <Tilt>
             <div className="list_inner" onClick={toggleModalTwo}>
               <div className="hover">
-                <img className="svg custom" src="img/svg/2.svg" alt="" />
+                <img className="svg custom" src="img/svg/3.svg" alt="" />
                 <div className="service_title">
-                  <h3>Ui/Ux Consultancy</h3>
+                  <h3>Family & Newborn</h3>
                 </div>
                 <div className="learn_more">
                   Learn More<span></span>
@@ -71,9 +72,9 @@ const Service = () => {
           <Tilt>
             <div className="list_inner" onClick={toggleModalThree}>
               <div className="hover">
-                <img className="svg custom" src="img/svg/3.svg" alt="" />
+                <img className="svg custom" src="img/svg/4.svg" alt="" />
                 <div className="service_title">
-                  <h3>Branding &amp; Design</h3>
+                  <h3>Engagement Photos</h3>
                 </div>
                 <div className="learn_more">
                   Learn More<span></span>
@@ -89,9 +90,9 @@ const Service = () => {
           <Tilt>
             <div className="list_inner" onClick={toggleModalFour}>
               <div className="hover">
-                <img className="svg custom" src="img/svg/4.svg" alt="" />
+                <img className="svg custom" src="img/svg/1.svg" alt="" />
                 <div className="service_title">
-                  <h3>Mobile App Design</h3>
+                  <h3>Elopement Packages</h3>
                 </div>
                 <div className="learn_more">
                   Learn More<span></span>

@@ -25,8 +25,7 @@ const HomeDark = () => {
           <div className="edina_tm_title">
             <h3>What I Do</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-              ipsum sit nibh amet egestas tellus.
+              Booking slots for <strong>2022</strong> are now open - Check out the many services and packages I provide, and do not hesitate to reach out for more information!
             </p>
           </div>
           {/* End edian_tm_title */}
@@ -40,8 +39,7 @@ const HomeDark = () => {
           <div className="edina_tm_title">
             <h3>Portfolio</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-              ipsum sit nibh amet egestas tellus.
+              Some highlights of my journey so far
             </p>
           </div>
           {/* End edian_tm_title */}
@@ -55,8 +53,7 @@ const HomeDark = () => {
           <div className="edina_tm_title">
             <h3>Testimonials</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-              ipsum sit nibh amet egestas tellus.
+              Some of the amazing people I've had the pleasure of working with
             </p>
           </div>
           {/* End edian_tm_title */}
@@ -88,8 +85,7 @@ const HomeDark = () => {
           <div className="edina_tm_title">
             <h3>Contact</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-              ipsum sit nibh amet egestas tellus.
+              Reach out to me for any questions or booking inquiries
             </p>
           </div>
           <div className="extra_info">
