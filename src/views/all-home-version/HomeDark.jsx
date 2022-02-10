@@ -93,7 +93,6 @@ const HomeDark = () => {
             <Address />
            
           </div>
-          <Footer />
           {/* End Address Info */}
         </div>
  
