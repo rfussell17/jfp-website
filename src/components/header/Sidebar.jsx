@@ -37,12 +37,12 @@ const sidebarContent = [
 ];
 
 // sidebar footer bottom content
-const sidebarFooterContent = {
-  avatar: "img/about/avatar.jpg",
-  name: "Help",
-  email: "support@gmail.com",
-  emailRef: "mailto:robfuss17@gmail.com",
-};
+// const sidebarFooterContent = {
+//   avatar: "img/about/avatar.jpg",
+//   name: "Help",
+//   email: "support@gmail.com",
+//   emailRef: "mailto:robfuss17@gmail.com",
+// };
 
 const Sidebar = () => {
   const [click, setClick] = useState(false);
