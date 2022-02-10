@@ -51,8 +51,9 @@ const About = () => {
                 I would love to chat with you if your interested in booking with
                 me! Let's make it happen!
               </p>
+            
             </div>
-            <Social />
+           
           </div>
           {/* End leftpart */}
 
