@@ -7,7 +7,7 @@ export default function Testimonials() {
   var settings = {
     dots: true,
     arrow: false,
-    infinite: true,
+    infinite: false,
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 1,
@@ -26,7 +26,21 @@ export default function Testimonials() {
 
   const testimonialContent = [
     {
-      img: "1",
+   
+      desc: `Jonny did an amazing job with our wedding photos! We were on a time crunch and asked him 3 weeks before the date if he could shoot our wedding over the holidays. He gave us a whole day away from his wife and newborn on boxing day which was nothing short of amazing. The photos were spectacular, even though we had a winter wedding in low light and -25 weather. He even stayed outside all day so his lenses wouldn't fog up and he would be ready at a moments notice. If you are looking for a wedding photographer, Jonny is your guy!`,
+      name: "Jamie and Kassie",
+      designation: "Wedding Shoot",
+      delayAnimation: "200",
+    },
+    {
+ 
+      desc: `We hired Jonny for our wedding in August and gave him complete creative control, and he genuinely blew us away. He made two people who hate having their picture taken feel completely comfortable, and captured some really special candid photos of us, our family and friends will cherish for the rest of our lives. Jonny was an absolute blast to have with us on our wedding day, and fit right in with the celebration. He was full of great ideas and was so enthusiastic, and an excellent communicator. We couldn't be happier to have had Jonny capture our special day, and have recommended him to everyone we know. We will absolutely be using his services again in the future.`,
+      name: "Foster and Devin",
+      designation: "Wedding Shoot",
+      delayAnimation: "100",
+    },
+    {
+ 
       desc: `We loved our family photos. Jon was great to work with and was so patient with our toddler. We look forward to having Jon capturing more family moments in the years to come`,
       name: "Rich and Rachel",
       designation: "Family Session",
@@ -39,20 +53,7 @@ export default function Testimonials() {
       designation: "Maternity, Newborn, Family Sessions",
       delayAnimation: "100",
     },
-    {
-      img: "3",
-      desc: `Jonny did an amazing job with our wedding photos! We were on a time crunch and asked him 3 weeks before the date if he could shoot our wedding over the holidays. He gave us a whole day away from his wife and newborn on boxing day which was nothing short of amazing. The photos were spectacular, even though we had a winter wedding in low light and -25 weather. He even stayed outside all day so his lenses wouldn't fog up and he would be ready at a moments notice. If you are looking for a wedding photographer, Jonny is your guy!`,
-      name: "Jamie and Kassie",
-      designation: "Wedding Shoot",
-      delayAnimation: "200",
-    },
-    {
-      img: "2",
-      desc: `We hired Jonny for our wedding in August and gave him complete creative control, and he genuinely blew us away. He made two people who hate having their picture taken feel completely comfortable, and captured some really special candid photos of us, our family and friends will cherish for the rest of our lives. Jonny was an absolute blast to have with us on our wedding day, and fit right in with the celebration. He was full of great ideas and was so enthusiastic, and an excellent communicator. We couldn't be happier to have had Jonny capture our special day, and have recommended him to everyone we know. We will absolutely be using his services again in the future.`,
-      name: "Foster and Devin",
-      designation: "Wedding Shoot",
-      delayAnimation: "100",
-    },
+
   ];
 
   return (
@@ -68,15 +69,7 @@ export default function Testimonials() {
             <div className="details">
               <div className="author">
                 <div className="image">
-                  <div
-                    className="main"
-                    style={{
-                      backgroundImage: `url(${
-                        process.env.PUBLIC_URL +
-                        `img/testimonials/${val.img}.jpg`
-                      })`,
-                    }}
-                  ></div>
+
                 </div>
                 {/* End image */}
 

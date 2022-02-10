@@ -64,7 +64,7 @@ const Sidebar = () => {
       >
         <div className="sidebar_inner">
           <div className="logo">
-            <Link to="/">
+            {/* <Link to="/">
               <img
                 className="logo_dark"
                 src={`img/logo/${logo}.svg`}
@@ -75,7 +75,7 @@ const Sidebar = () => {
                 src={`img/logo/${logo}.png`}
                 alt="brand"
               />
-            </Link>
+            </Link> */}
           </div>
           {/* End .logo */}
 
@@ -119,7 +119,7 @@ const Sidebar = () => {
 
           <div className="author">
             <div className="inner">
-              <div className="image">
+              {/* <div className="image">
                 <div
                   className="main"
                   style={{
@@ -128,13 +128,13 @@ const Sidebar = () => {
                     })`,
                   }}
                 ></div>
-              </div>
-              <div className="short">
+              </div> */}
+              {/* <div className="short">
                 <h3>{sidebarFooterContent.name}</h3>
                 <a href={sidebarFooterContent.emailRef}>
                   {sidebarFooterContent.email}
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
           {/* End author */}

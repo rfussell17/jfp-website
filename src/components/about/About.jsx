@@ -1,7 +1,6 @@
 import React from "react";
 
 const About = () => {
-
   return (
     //    ABOUT
     <div className="edina_tm_about" id="about">
@@ -21,24 +20,39 @@ const About = () => {
                 Hi, I'm <span>Jonny</span>
               </h3>
               <p>
-                I'm a lifestyle photographer based out of Kelowna, BC.
-                <br></br>
-                I’ve been passionate about photography for over 7 years, but
-                this last year I decided I wanted to work towards doing this
-                thing I love full time.
-                <br></br>
-                <br></br>I <strong>LOVE</strong> that you are always learning no
-                matter how long you have been doing it!
-                <br></br>I <strong>LOVE</strong> doing landscape/cityscape
-                photography! It keeps me inspired to keep pushing my creative
-                boundaries!
-                <br></br>I <strong>LOVE</strong> the photography community!
-                <br></br>
-                <br></br>
-                The support - both online, and in my city - has been amazing,
-                and there are so many unbelievable creators that always keep me
-                motivated to get out and take pictures and stand out!
+                I'm a photographer based out of Kelowna, BC.
+                </p>
+              <p>
+              I was born in Ontario but grew up in the lower
+                mainland/okanagan. I love Kelowna, the amazing
+                wineries/breweries we have here and of course the weather, minus
+                the fire and smoke season! I am a father of one amazing son
+                Henry and I have a beautiful wife Kristina. We have an old dog
+                Thor, who is literally the grumpiest dog on the planet but I
+                love him! We also have 2 cats; Lola (who needs a diet) and Lucy.
+                Needless to say, it's a very busy household!
               </p>
+              <p>
+                <br></br>
+     
+              I’m definitely more on the goofy side. I have a great sense of
+                humour and I love making people laugh. I love kids and meeting
+                new people. I find it very easy to make people comfortable in
+                front of my camera!
+              </p>
+              <p>
+                <br></br>
+          
+              I love to photograph weddings! From getting ready, to
+                the first dance. The whole event is such an amazing experience
+                to be apart of! I love doing engagement shoots, family sessions,
+                and everything else in between! I really enjoying getting
+                creative by incorporating new and exciting techniques, and any
+                ideas you or I may have to capture your special moments!
+              </p>
+              <br></br>
+              <p>I would love to chat with you if your interested in
+                booking with me! Let's make it happen!</p>
             </div>
           </div>
           {/* End leftpart */}
@@ -50,10 +64,9 @@ const About = () => {
               <div
                 className="main"
                 style={{
-                    backgroundImage: `url(${
+                  backgroundImage: `url(${
                     process.env.PUBLIC_URL + "img/about/2.jpeg"
                   })`,
-                  
                 }}
                 data-aos="fade-left"
                 data-aos-duration="1200"
@@ -64,7 +77,6 @@ const About = () => {
           {/* End righttpart */}
         </div>
       </div>
-
     </div>
     // /ABOUT
   );
