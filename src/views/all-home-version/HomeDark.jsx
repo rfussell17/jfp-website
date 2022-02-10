@@ -84,8 +84,12 @@ const HomeDark = () => {
           <div className="edina_tm_title">
             <h3>Contact</h3>
             <p>
-              You can also order canvas prints of any of my landscape photos, check out my gallery on Instagram, and contact me for sizing and prices.
-              Reach out to me for any questions or booking inquiries.
+              Order canvas prints of my landscape photos from my gallery on Instagram - It's constantly updating -  and contact me for sizing and prices.
+              <br></br>
+              <br></br>
+              Reach out for any questions or booking inquiries.
+              <br></br>
+              Let's work together soon!
             </p>
           </div>
           <div className="extra_info">

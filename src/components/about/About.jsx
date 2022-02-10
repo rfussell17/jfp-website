@@ -1,4 +1,5 @@
 import React from "react";
+import Social from "../Social";
 
 const About = () => {
   return (
@@ -19,12 +20,10 @@ const About = () => {
               <h3>
                 Hi, I'm <span>Jonny</span>
               </h3>
+              <p>I'm a photographer based out of Kelowna, BC.</p>
               <p>
-                I'm a photographer based out of Kelowna, BC.
-                </p>
-              <p>
-              I was born in Ontario but grew up in the lower
-                mainland/okanagan. I love Kelowna, the amazing
+                I was born in Ontario but grew up in the Lower
+                Mainland/Okanagan. I love Kelowna, the amazing
                 wineries/breweries we have here and of course the weather, minus
                 the fire and smoke season! I am a father of one amazing son
                 Henry and I have a beautiful wife Kristina. We have an old dog
@@ -34,16 +33,13 @@ const About = () => {
               </p>
               <p>
                 <br></br>
-     
-              I’m definitely more on the goofy side. I have a great sense of
+                I’m definitely more on the goofy side. I have a great sense of
                 humour and I love making people laugh. I love kids and meeting
                 new people. I find it very easy to make people comfortable in
                 front of my camera!
               </p>
               <p>
-                <br></br>
-          
-              I love to photograph weddings! From getting ready, to
+                <br></br>I love to photograph weddings! From getting ready, to
                 the first dance. The whole event is such an amazing experience
                 to be apart of! I love doing engagement shoots, family sessions,
                 and everything else in between! I really enjoying getting
@@ -51,9 +47,12 @@ const About = () => {
                 ideas you or I may have to capture your special moments!
               </p>
               <br></br>
-              <p>I would love to chat with you if your interested in
-                booking with me! Let's make it happen!</p>
+              <p>
+                I would love to chat with you if your interested in booking with
+                me! Let's make it happen!
+              </p>
             </div>
+            <Social />
           </div>
           {/* End leftpart */}
 

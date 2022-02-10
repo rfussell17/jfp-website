@@ -1,7 +1,6 @@
 import React from "react";
 import {
   FiFacebook,
-  FiTwitter,
   FiInstagram,
   FiMail,
 
