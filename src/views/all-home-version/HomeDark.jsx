@@ -7,7 +7,7 @@ import Portfolio from "../../components/portfolio/Portfolio";
 import Testimonials from "../../components/testimonials/Testimonials";
 import Footer from "../../components/footer/Footer";
 import Address from "../../components/Address";
-import Map from "../../components/Map";
+
 
 const HomeDark = () => {
   document.body.classList.add("dark");

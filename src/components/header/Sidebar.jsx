@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import ScrollspyNav from "react-scrollspy-nav";
 
 // logo name
-const logo = "light";
+// const logo = "light";
 // const logo2 = "light";
 
 // sidebar content
@@ -37,12 +37,7 @@ const sidebarContent = [
 ];
 
 // sidebar footer bottom content
-// const sidebarFooterContent = {
-//   avatar: "img/about/avatar.jpg",
-//   name: "Help",
-//   email: "support@gmail.com",
-//   emailRef: "mailto:robfuss17@gmail.com",
-// };
+// npm 
 
 const Sidebar = () => {
   const [click, setClick] = useState(false);
