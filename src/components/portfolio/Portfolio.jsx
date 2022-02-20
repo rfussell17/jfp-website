@@ -32,54 +32,18 @@ const Portfolio = () => {
     <div className="portfolio_inner my_carousel gallery_zoom">
       <ul data-aos="fade-right" data-aos-duration="1200">
         <Slider {...settings}>
-          <li>
-            <div className="list_inner">
-              <div className="image">
-                  <img
-                    src="img/portfolio/6.jpeg"
-                    data-tip
-                    data-for="product"
-                    alt="portfolio"
-                  />
-                  {/* <ReactTooltip
-                    id="product"
-                    place="bottom"
-                    type="light"
-                    effect="float"
-                    className="tooltip-wrapper"
-                  >
-                    <div>
-                      <h5>Wedding</h5>
-                      <span>Product</span>
-                    </div>
-                  </ReactTooltip> */}
-            
-              </div>
-            </div>
-          </li>
+
           {/* End li */}
 
           <li>
             <div className="list_inner">
               <div className="image">
                   <img
-                    src="img/portfolio/2.jpeg"
+                    src="img/portfolio/3a.jpeg"
                     data-tip
                     data-for="dribbble"
                     alt="portfolio"
                   />
-                  {/* <ReactTooltip
-                    id="dribbble"
-                    place="bottom"
-                    type="light"
-                    effect="float"
-                    className="tooltip-wrapper"
-                  >
-                    <div>
-                      <h5>Dribbble Shot</h5>
-                      <span>Dribbble</span>
-                    </div>
-                  </ReactTooltip> */}
               </div>
             </div>
           </li>
@@ -89,75 +53,26 @@ const Portfolio = () => {
             <div className="list_inner">
               <div className="image">
                   <img
-                    src="img/portfolio/3.jpeg"
+                    src="img/portfolio/3b.jpeg"
                     data-tip
                     data-for="facebook"
                     alt="portfolio"
                   />
-                  {/* <ReactTooltip
-                    id="facebook"
-                    place="bottom"
-                    type="light"
-                    effect="float"
-                    className="tooltip-wrapper"
-                  >
-                    <div>
-                      <h5>Facebook Shot</h5>
-                      <span>Facebbok</span>
-                    </div>
-                  </ReactTooltip> */}
               </div>
             </div>
           </li>
           {/* End li */}
 
-          <li>
-            <div className="list_inner">
-              <div className="image">
-                  <img
-                    src="img/portfolio/4.jpeg"
-                    data-tip
-                    data-for="youtube"
-                    alt="portfolio"
-                  />
-                  {/* <ReactTooltip
-                    id="youtube"
-                    place="bottom"
-                    type="light"
-                    effect="float"
-                    className="tooltip-wrapper"
-                  >
-                    <div>
-                      <h5>Youtube Shot</h5>
-                      <span>Youtube</span>
-                    </div>
-                  </ReactTooltip> */}
-              </div>
-            </div>
-          </li>
-          {/* End li */}
 
           <li>
             <div className="list_inner">
               <div className="image">
                   <img
-                    src="img/portfolio/10.jpeg"
+                    src="img/portfolio/3c.jpeg"
                     data-tip
                     data-for="youtube"
                     alt="portfolio"
                   />
-                  {/* <ReactTooltip
-                    id="youtube"
-                    place="bottom"
-                    type="light"
-                    effect="float"
-                    className="tooltip-wrapper"
-                  >
-                    <div>
-                      <h5>Youtube Shot</h5>
-                      <span>Youtube</span>
-                    </div>
-                  </ReactTooltip> */}
               </div>
             </div>
           </li>
@@ -166,23 +81,11 @@ const Portfolio = () => {
             <div className="list_inner">
               <div className="image">
                   <img
-                    src="img/portfolio/1.jpeg"
+                    src="img/portfolio/3d.jpeg"
                     data-tip
                     data-for="youtube"
                     alt="portfolio"
                   />
-                  {/* <ReactTooltip
-                    id="youtube"
-                    place="bottom"
-                    type="light"
-                    effect="float"
-                    className="tooltip-wrapper"
-                  >
-                    <div>
-                      <h5>Youtube Shot</h5>
-                      <span>Youtube</span>
-                    </div>
-                  </ReactTooltip> */}
               </div>
             </div>
           </li>
@@ -191,23 +94,11 @@ const Portfolio = () => {
             <div className="list_inner">
               <div className="image">
                   <img
-                    src="img/portfolio/7.jpeg"
+                    src="img/portfolio/3e.jpeg"
                     data-tip
                     data-for="web"
                     alt="portfolio"
                   />
-                  {/* <ReactTooltip
-                    id="web"
-                    place="bottom"
-                    type="light"
-                    effect="float"
-                    className="tooltip-wrapper"
-                  >
-                    <div>
-                      <h5>Web Apps Shot</h5>
-                      <span>Web Apps</span>
-                    </div>
-                  </ReactTooltip> */}
               </div>
             </div>
           </li>
@@ -217,23 +108,11 @@ const Portfolio = () => {
             <div className="list_inner">
               <div className="image">
                   <img
-                    src="img/portfolio/12.jpeg"
+                    src="img/portfolio/1a.jpeg"
                     data-tip
                     data-for="youtube"
                     alt="portfolio"
                   />
-                  {/* <ReactTooltip
-                    id="youtube"
-                    place="bottom"
-                    type="light"
-                    effect="float"
-                    className="tooltip-wrapper"
-                  >
-                    <div>
-                      <h5>Youtube Shot</h5>
-                      <span>Youtube</span>
-                    </div>
-                  </ReactTooltip> */}
               </div>
             </div>
           </li>
@@ -242,23 +121,11 @@ const Portfolio = () => {
             <div className="list_inner">
               <div className="image">
                   <img
-                    src="img/portfolio/9.jpeg"
+                    src="img/portfolio/1b.jpeg"
                     data-tip
                     data-for="youtube"
                     alt="portfolio"
                   />
-                  {/* <ReactTooltip
-                    id="youtube"
-                    place="bottom"
-                    type="light"
-                    effect="float"
-                    className="tooltip-wrapper"
-                  >
-                    <div>
-                      <h5>Youtube Shot</h5>
-                      <span>Youtube</span>
-                    </div>
-                  </ReactTooltip> */}
               </div>
             </div>
           </li>
@@ -267,23 +134,11 @@ const Portfolio = () => {
             <div className="list_inner">
               <div className="image">
                   <img
-                    src="img/portfolio/15.jpeg"
+                    src="img/portfolio/1c.jpeg"
                     data-tip
                     data-for="youtube"
                     alt="portfolio"
                   />
-                  {/* <ReactTooltip
-                    id="youtube"
-                    place="bottom"
-                    type="light"
-                    effect="float"
-                    className="tooltip-wrapper"
-                  >
-                    <div>
-                      <h5>Youtube Shot</h5>
-                      <span>Youtube</span>
-                    </div>
-                  </ReactTooltip> */}
               </div>
             </div>
           </li>
@@ -292,49 +147,245 @@ const Portfolio = () => {
             <div className="list_inner">
               <div className="image">
                   <img
-                    src="img/portfolio/5.jpeg"
+                    src="img/portfolio/1d.jpeg"
                     data-tip
-                    data-for="youtube"
+                    data-for="dribbble"
                     alt="portfolio"
                   />
-                  {/* <ReactTooltip
-                    id="youtube"
-                    place="bottom"
-                    type="light"
-                    effect="float"
-                    className="tooltip-wrapper"
-                  >
-                    <div>
-                      <h5>Youtube Shot</h5>
-                      <span>Youtube</span>
-                    </div>
-                  </ReactTooltip> */}
               </div>
             </div>
           </li>
-      
 
           <li>
             <div className="list_inner">
               <div className="image">
                   <img
-                    src="img/portfolio/13.jpeg"
+                    src="img/portfolio/1e.jpeg"
                     data-tip
-                    data-for="youtube"
+                    data-for="dribbble"
                     alt="portfolio"
                   />
-                  {/* <ReactTooltip
-                    id="youtube"
-                    place="bottom"
-                    type="light"
-                    effect="float"
-                    className="tooltip-wrapper"
-                  >
-                    <div>
-                      <h5>Youtube Shot</h5>
-                      <span>Youtube</span>
-                    </div>
-                  </ReactTooltip> */}
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div className="list_inner">
+              <div className="image">
+                  <img
+                    src="img/portfolio/2a.jpeg"
+                    data-tip
+                    data-for="dribbble"
+                    alt="portfolio"
+                  />
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div className="list_inner">
+              <div className="image">
+                  <img
+                    src="img/portfolio/2b.jpeg"
+                    data-tip
+                    data-for="dribbble"
+                    alt="portfolio"
+                  />
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div className="list_inner">
+              <div className="image">
+                  <img
+                    src="img/portfolio/2c.jpeg"
+                    data-tip
+                    data-for="dribbble"
+                    alt="portfolio"
+                  />
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div className="list_inner">
+              <div className="image">
+                  <img
+                    src="img/portfolio/4a.jpeg"
+                    data-tip
+                    data-for="dribbble"
+                    alt="portfolio"
+                  />
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div className="list_inner">
+              <div className="image">
+                  <img
+                    src="img/portfolio/4b.jpeg"
+                    data-tip
+                    data-for="dribbble"
+                    alt="portfolio"
+                  />
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div className="list_inner">
+              <div className="image">
+                  <img
+                    src="img/portfolio/4c.jpeg"
+                    data-tip
+                    data-for="dribbble"
+                    alt="portfolio"
+                  />
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div className="list_inner">
+              <div className="image">
+                  <img
+                    src="img/portfolio/4d.jpeg"
+                    data-tip
+                    data-for="dribbble"
+                    alt="portfolio"
+                  />
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div className="list_inner">
+              <div className="image">
+                  <img
+                    src="img/portfolio/5a.jpeg"
+                    data-tip
+                    data-for="dribbble"
+                    alt="portfolio"
+                  />
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div className="list_inner">
+              <div className="image">
+                  <img
+                    src="img/portfolio/5b.jpeg"
+                    data-tip
+                    data-for="dribbble"
+                    alt="portfolio"
+                  />
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div className="list_inner">
+              <div className="image">
+                  <img
+                    src="img/portfolio/6a.jpeg"
+                    data-tip
+                    data-for="dribbble"
+                    alt="portfolio"
+                  />
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div className="list_inner">
+              <div className="image">
+                  <img
+                    src="img/portfolio/6b.jpeg"
+                    data-tip
+                    data-for="dribbble"
+                    alt="portfolio"
+                  />
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div className="list_inner">
+              <div className="image">
+                  <img
+                    src="img/portfolio/6c.jpeg"
+                    data-tip
+                    data-for="dribbble"
+                    alt="portfolio"
+                  />
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div className="list_inner">
+              <div className="image">
+                  <img
+                    src="img/portfolio/6d.jpeg"
+                    data-tip
+                    data-for="dribbble"
+                    alt="portfolio"
+                  />
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div className="list_inner">
+              <div className="image">
+                  <img
+                    src="img/portfolio/7a.jpeg"
+                    data-tip
+                    data-for="dribbble"
+                    alt="portfolio"
+                  />
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div className="list_inner">
+              <div className="image">
+                  <img
+                    src="img/portfolio/7b.jpeg"
+                    data-tip
+                    data-for="dribbble"
+                    alt="portfolio"
+                  />
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div className="list_inner">
+              <div className="image">
+                  <img
+                    src="img/portfolio/7c.jpeg"
+                    data-tip
+                    data-for="dribbble"
+                    alt="portfolio"
+                  />
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div className="list_inner">
+              <div className="image">
+                  <img
+                    src="img/portfolio/7d.jpeg"
+                    data-tip
+                    data-for="dribbble"
+                    alt="portfolio"
+                  />
               </div>
             </div>
           </li>
