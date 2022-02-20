@@ -35,25 +35,25 @@ const Portfolio = () => {
 
           {/* End li */}
 
-          <li>
+          {/* <li>
             <div className="list_inner">
               <div className="image">
                   <img
-                    src="img/portfolio/3a.jpeg"
+                    src="img/portfolio/6.jpg"
                     data-tip
                     data-for="dribbble"
                     alt="portfolio"
                   />
               </div>
             </div>
-          </li>
+          </li> */}
           {/* End li */}
 
           <li>
             <div className="list_inner">
               <div className="image">
                   <img
-                    src="img/portfolio/3b.jpeg"
+                    src="img/portfolio/3bb.jpeg"
                     data-tip
                     data-for="facebook"
                     alt="portfolio"
@@ -68,7 +68,7 @@ const Portfolio = () => {
             <div className="list_inner">
               <div className="image">
                   <img
-                    src="img/portfolio/3c.jpeg"
+                    src="img/portfolio/3cc.jpeg"
                     data-tip
                     data-for="youtube"
                     alt="portfolio"
@@ -81,7 +81,7 @@ const Portfolio = () => {
             <div className="list_inner">
               <div className="image">
                   <img
-                    src="img/portfolio/3d.jpeg"
+                    src="img/portfolio/3dd.jpeg"
                     data-tip
                     data-for="youtube"
                     alt="portfolio"
@@ -94,7 +94,7 @@ const Portfolio = () => {
             <div className="list_inner">
               <div className="image">
                   <img
-                    src="img/portfolio/3e.jpeg"
+                    src="img/portfolio/3ee.jpeg"
                     data-tip
                     data-for="web"
                     alt="portfolio"
@@ -108,7 +108,7 @@ const Portfolio = () => {
             <div className="list_inner">
               <div className="image">
                   <img
-                    src="img/portfolio/1a.jpeg"
+                    src="img/portfolio/1aa.jpeg"
                     data-tip
                     data-for="youtube"
                     alt="portfolio"
@@ -121,7 +121,7 @@ const Portfolio = () => {
             <div className="list_inner">
               <div className="image">
                   <img
-                    src="img/portfolio/1b.jpeg"
+                    src="img/portfolio/1bb.jpeg"
                     data-tip
                     data-for="youtube"
                     alt="portfolio"
@@ -134,7 +134,7 @@ const Portfolio = () => {
             <div className="list_inner">
               <div className="image">
                   <img
-                    src="img/portfolio/1c.jpeg"
+                    src="img/portfolio/1cc.jpeg"
                     data-tip
                     data-for="youtube"
                     alt="portfolio"
@@ -147,7 +147,7 @@ const Portfolio = () => {
             <div className="list_inner">
               <div className="image">
                   <img
-                    src="img/portfolio/1d.jpeg"
+                    src="img/portfolio/1dd.jpeg"
                     data-tip
                     data-for="dribbble"
                     alt="portfolio"
@@ -160,7 +160,7 @@ const Portfolio = () => {
             <div className="list_inner">
               <div className="image">
                   <img
-                    src="img/portfolio/1e.jpeg"
+                    src="img/portfolio/1ee.jpeg"
                     data-tip
                     data-for="dribbble"
                     alt="portfolio"
@@ -173,7 +173,7 @@ const Portfolio = () => {
             <div className="list_inner">
               <div className="image">
                   <img
-                    src="img/portfolio/2a.jpeg"
+                    src="img/portfolio/2aa.jpeg"
                     data-tip
                     data-for="dribbble"
                     alt="portfolio"
@@ -186,7 +186,7 @@ const Portfolio = () => {
             <div className="list_inner">
               <div className="image">
                   <img
-                    src="img/portfolio/2b.jpeg"
+                    src="img/portfolio/2bb.jpeg"
                     data-tip
                     data-for="dribbble"
                     alt="portfolio"
@@ -199,7 +199,7 @@ const Portfolio = () => {
             <div className="list_inner">
               <div className="image">
                   <img
-                    src="img/portfolio/2c.jpeg"
+                    src="img/portfolio/2cc.jpeg"
                     data-tip
                     data-for="dribbble"
                     alt="portfolio"
@@ -212,7 +212,7 @@ const Portfolio = () => {
             <div className="list_inner">
               <div className="image">
                   <img
-                    src="img/portfolio/4a.jpeg"
+                    src="img/portfolio/4aa.jpeg"
                     data-tip
                     data-for="dribbble"
                     alt="portfolio"
@@ -225,7 +225,7 @@ const Portfolio = () => {
             <div className="list_inner">
               <div className="image">
                   <img
-                    src="img/portfolio/4b.jpeg"
+                    src="img/portfolio/4bb.jpeg"
                     data-tip
                     data-for="dribbble"
                     alt="portfolio"
@@ -238,7 +238,7 @@ const Portfolio = () => {
             <div className="list_inner">
               <div className="image">
                   <img
-                    src="img/portfolio/4c.jpeg"
+                    src="img/portfolio/4cc.jpeg"
                     data-tip
                     data-for="dribbble"
                     alt="portfolio"
@@ -251,7 +251,7 @@ const Portfolio = () => {
             <div className="list_inner">
               <div className="image">
                   <img
-                    src="img/portfolio/4d.jpeg"
+                    src="img/portfolio/4dd.jpeg"
                     data-tip
                     data-for="dribbble"
                     alt="portfolio"
@@ -264,7 +264,7 @@ const Portfolio = () => {
             <div className="list_inner">
               <div className="image">
                   <img
-                    src="img/portfolio/5a.jpeg"
+                    src="img/portfolio/5aa.jpeg"
                     data-tip
                     data-for="dribbble"
                     alt="portfolio"
@@ -277,7 +277,7 @@ const Portfolio = () => {
             <div className="list_inner">
               <div className="image">
                   <img
-                    src="img/portfolio/5b.jpeg"
+                    src="img/portfolio/5bb.jpeg"
                     data-tip
                     data-for="dribbble"
                     alt="portfolio"
@@ -290,7 +290,7 @@ const Portfolio = () => {
             <div className="list_inner">
               <div className="image">
                   <img
-                    src="img/portfolio/6a.jpeg"
+                    src="img/portfolio/6aa.jpeg"
                     data-tip
                     data-for="dribbble"
                     alt="portfolio"
@@ -303,7 +303,7 @@ const Portfolio = () => {
             <div className="list_inner">
               <div className="image">
                   <img
-                    src="img/portfolio/6b.jpeg"
+                    src="img/portfolio/6bb.jpeg"
                     data-tip
                     data-for="dribbble"
                     alt="portfolio"
@@ -316,7 +316,7 @@ const Portfolio = () => {
             <div className="list_inner">
               <div className="image">
                   <img
-                    src="img/portfolio/6c.jpeg"
+                    src="img/portfolio/6cc.jpeg"
                     data-tip
                     data-for="dribbble"
                     alt="portfolio"
@@ -329,7 +329,7 @@ const Portfolio = () => {
             <div className="list_inner">
               <div className="image">
                   <img
-                    src="img/portfolio/6d.jpeg"
+                    src="img/portfolio/6dd.jpeg"
                     data-tip
                     data-for="dribbble"
                     alt="portfolio"
@@ -342,7 +342,7 @@ const Portfolio = () => {
             <div className="list_inner">
               <div className="image">
                   <img
-                    src="img/portfolio/7a.jpeg"
+                    src="img/portfolio/7bb.jpeg"
                     data-tip
                     data-for="dribbble"
                     alt="portfolio"
@@ -355,7 +355,7 @@ const Portfolio = () => {
             <div className="list_inner">
               <div className="image">
                   <img
-                    src="img/portfolio/7b.jpeg"
+                    src="img/portfolio/7cc.jpeg"
                     data-tip
                     data-for="dribbble"
                     alt="portfolio"
@@ -368,20 +368,7 @@ const Portfolio = () => {
             <div className="list_inner">
               <div className="image">
                   <img
-                    src="img/portfolio/7c.jpeg"
-                    data-tip
-                    data-for="dribbble"
-                    alt="portfolio"
-                  />
-              </div>
-            </div>
-          </li>
-
-          <li>
-            <div className="list_inner">
-              <div className="image">
-                  <img
-                    src="img/portfolio/7d.jpeg"
+                    src="img/portfolio/7dd.jpeg"
                     data-tip
                     data-for="dribbble"
                     alt="portfolio"
