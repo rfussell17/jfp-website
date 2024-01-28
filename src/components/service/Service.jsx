@@ -90,7 +90,7 @@ const Service = () => {
           <Tilt>
             <div className="list_inner" onClick={toggleModalFour}>
               <div className="hover">
-                <img className="svg custom" src="img/svg/1.svg" alt="" />
+                <img className="svg custom" src="img/svg/human.svg" alt="" />
                 <div className="service_title">
                   <h3>Portrait Session</h3>
                 </div>

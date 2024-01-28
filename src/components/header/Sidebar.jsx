@@ -1,11 +1,8 @@
 import React, { useState } from "react";
 // git a
 import ScrollspyNav from "react-scrollspy-nav";
-
-// logo name
+// 
 // const logo = "light";
-// const logo2 = "light";
-
 // sidebar content
 const sidebarContent = [
   { icon: "home", itemName: "Home", itemRoute: "#home", activeClass: "active" },
@@ -59,18 +56,13 @@ const Sidebar = () => {
       >
         <div className="sidebar_inner">
           <div className="logo">
-            {/* <Link to="/">
-              <img
-                className="logo_dark"
-                src={`img/logo/${logo}.svg`}
-                alt="brand"
-              />
-              <img
+
+              {/* <img
                 className="logo_light"
                 src={`img/logo/${logo}.png`}
                 alt="brand"
-              />
-            </Link> */}
+              /> */}
+
           </div>
           {/* End .logo */}
 
