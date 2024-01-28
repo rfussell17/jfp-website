@@ -30,10 +30,10 @@ const ModalOne = () => {
               <p>4 hour wedding day coverage with myself + associate photographer</p>
             </li>
             <li>
-              <p>Minimum 250 photos delivered by online gallery</p>
+              <p>Minimum 300 photos delivered by online gallery</p>
             </li>
             <li>
-              <p><strong>$1200</strong></p>
+              <p><strong>$2000</strong></p>
             </li>
           </ul>
         </div>
@@ -49,7 +49,7 @@ const ModalOne = () => {
               <p>Minimum 500 photos delivered by online gallery</p>
             </li>
             <li>
-              <p><strong>$1800</strong></p>
+              <p><strong>$2750</strong></p>
             </li>
           </ul>
         </div>
@@ -59,13 +59,13 @@ const ModalOne = () => {
         <div className="in_list">
           <ul>
             <li>
-              <p>Full wedding day coverage with myself + associate photographer</p>
+              <p>8 hour wedding day coverage with myself + associate photographer</p>
             </li>
             <li>
               <p>Minimum 500 photos delivered by online gallery</p>
             </li>
             <li>
-              <p><strong>$2500</strong></p>
+              <p><strong>$4000</strong></p>
             </li>
           </ul>
         </div>

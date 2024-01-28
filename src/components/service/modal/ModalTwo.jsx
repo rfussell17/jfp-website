@@ -25,10 +25,10 @@ const ModalTwo = () => {
               <p>1 hour session with myself</p>
             </li>
             <li>
-              <p>Minimum 20 edited photos to be delivered by online gallery</p>
+              <p>Minimum 30 edited photos to be delivered by online gallery</p>
             </li>
             <li>
-              <p><strong>$300</strong></p>
+              <p><strong>$350</strong></p>
             </li>
           </ul>
         </div>

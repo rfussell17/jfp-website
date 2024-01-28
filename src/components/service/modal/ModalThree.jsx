@@ -22,10 +22,10 @@ const ModalThree = () => {
         <div className="in_list">
           <ul>
             <li>
-              <p>1.5 hour session with myself</p>
+              <p>1 hour session with myself</p>
             </li>
             <li>
-              <p>Minimum 30 edited photos to be delivered by online gallery</p>
+              <p>Minimum 20 edited photos to be delivered by online gallery</p>
             </li>
             <li>
               <p><strong>$300</strong> per standalone session <strong>OR</strong> free when combined with any wedding package</p>
