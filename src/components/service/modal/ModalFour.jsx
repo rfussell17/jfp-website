@@ -17,12 +17,21 @@ const ModalFour = () => {
       {/* End big image */}
 
       <div className="description">
-        <h3>Elopement Packages</h3>
+        <h3>Portrait Session</h3>
 
         <div className="in_list">
           <ul>
             <li>
-              <p>Starting at <strong>$2000</strong> + hotel and gas expenses</p>
+            <p>1 hour portrait session with myself</p>
+            </li>
+            <li>
+            <p>2 outfits</p>
+            </li>
+            <li>
+            <p>15 edited photos</p>
+            </li>
+            <li>
+              <p><strong>$325</strong></p>
             </li>
           </ul>
         </div>
