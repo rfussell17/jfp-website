@@ -19,22 +19,30 @@ const About = () => {
               <h3>
                 Hi, I'm <span>Jonny</span>
               </h3>
-              <p>Hey there, I'm Jonny, your go-to photographer in Kelowna! Born in Ontario but raised in the Lower Mainland, I've fully embraced the quirks of BC living – wineries, breweries, and, well, the occasional weather drama.
-
-In the chaos of our household, amidst hilarious shenanigans with my son Henry, I'm the guy who loves making people laugh in front of the camera. Kids, new faces, you name it – making everyone feel comfy is my superpower!
-
-Weddings are my playground – from the pre-ceremony silliness to the first attempt at a coordinated dance. I love bringing creativity to the table, trying out new techniques to make your moments uniquely memorable.
-
-Ready for a chat? Let's make capturing your special moments as fun as trying to convince a kid that bedtime is a good idea.
+              <p>
+                Hey there, I'm Jonny, your go-to photographer in Kelowna! Born
+                in Ontario but raised in the Lower Mainland, I've fully embraced
+                the quirks of BC living – wineries, breweries, and, well, the
+                occasional weather drama. In the chaos of our household, amidst
+                hilarious shenanigans with my son Henry, I'm the guy who loves
+                making people laugh in front of the camera. Kids, new faces, you
+                name it – making everyone feel comfy is my superpower! Weddings
+                are my playground – from the pre-ceremony silliness to the first
+                attempt at a coordinated dance. I love bringing creativity to
+                the table, trying out new techniques to make your moments
+                uniquely memorable. Ready for a chat? Let's make capturing your
+                special moments as fun as trying to convince a kid that bedtime
+                is a good idea.
               </p>
               <div className="logo-div">
-      <img className="logo_light" src={`img/logo/light.png`} alt="brand" height={200}  />
-      </div>
+                <img
+                  className="logo_light"
+                  src={`img/logo/light.png`}
+                  alt="brand"
+                  height={200}
+                />
+              </div>
             </div>
-
-   
-            
-           
           </div>
           {/* End leftpart */}
 

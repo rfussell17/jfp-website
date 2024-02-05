@@ -5,11 +5,7 @@ const Footer = () => {
     <>
       <div className="inner">
         <div className="copy">
-          <p>
-            &copy; {new Date().getFullYear()} by{" "}
-
-            
-          </p>
+          <p>&copy; {new Date().getFullYear()} by </p>
         </div>
       </div>
     </>

@@ -36,7 +36,7 @@ const Service = () => {
             <div className="list_inner" onClick={toggleModalOne}>
               <div className="hover">
                 <img className="svg custom" src="img/svg/2.svg" alt="" />
-               
+
                 <div className="service_title">
                   <h3>Wedding Packages</h3>
                 </div>

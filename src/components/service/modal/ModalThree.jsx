@@ -28,11 +28,13 @@ const ModalThree = () => {
               <p>Minimum 20 edited photos to be delivered by online gallery</p>
             </li>
             <li>
-              <p><strong>$300</strong> per standalone session <strong>OR</strong> free when combined with any wedding package</p>
+              <p>
+                <strong>$300</strong> per standalone session <strong>OR</strong>{" "}
+                free when combined with any wedding package
+              </p>
             </li>
           </ul>
         </div>
-       
       </div>
     </div>
   );

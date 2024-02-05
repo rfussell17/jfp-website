@@ -1,9 +1,6 @@
 import React, { useState } from "react";
-// git a
 import ScrollspyNav from "react-scrollspy-nav";
-// 
-// const logo = "light";
-// sidebar content
+
 const sidebarContent = [
   { icon: "home", itemName: "Home", itemRoute: "#home", activeClass: "active" },
   { icon: "human", itemName: "About", itemRoute: "#about", activeClass: "" },
@@ -33,9 +30,6 @@ const sidebarContent = [
   },
 ];
 
-// sidebar footer bottom content
-// npm 
-
 const Sidebar = () => {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
@@ -50,14 +44,10 @@ const Sidebar = () => {
           </div>
         </button>
       </div>
-      {/* End Mobile Header */}
       <div
         className={click ? "edina_tm_sidebar menu-open" : "edina_tm_sidebar"}
       >
         <div className="sidebar_inner">
- 
-          {/* End .logo */}
-
           <div className="menu">
             <ScrollspyNav
               scrollTargetIds={[
@@ -93,7 +83,6 @@ const Sidebar = () => {
                 ))}
               </ul>
             </ScrollspyNav>
-
           </div>
         </div>
       </div>

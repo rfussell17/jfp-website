@@ -30,7 +30,9 @@ const Address = () => {
             <h3>Email</h3>
             <ul>
               <li>
-                <a href="mailto:jonnyfussell@gmail.com">jonnyfussell@gmail.com</a>
+                <a href="mailto:jonnyfussell@gmail.com">
+                  jonnyfussell@gmail.com
+                </a>
               </li>
             </ul>
           </div>{" "}
@@ -47,8 +49,9 @@ const Address = () => {
             <h3>Instagram</h3>
             <ul>
               <li>
-              <a href="https://www.instagram.com/jonny.fussell.photography">jonny.fussell.photography</a>
-             
+                <a href="https://www.instagram.com/jonny.fussell.photography">
+                  jonny.fussell.photography
+                </a>
               </li>
             </ul>
           </div>

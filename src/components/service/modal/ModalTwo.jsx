@@ -28,7 +28,9 @@ const ModalTwo = () => {
               <p>Minimum 30 edited photos to be delivered by online gallery</p>
             </li>
             <li>
-              <p><strong>$350</strong></p>
+              <p>
+                <strong>$350</strong>
+              </p>
             </li>
           </ul>
         </div>

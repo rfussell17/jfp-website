@@ -22,20 +22,21 @@ const ModalFour = () => {
         <div className="in_list">
           <ul>
             <li>
-            <p>1 hour portrait session with myself</p>
+              <p>1 hour portrait session with myself</p>
             </li>
             <li>
-            <p>2 outfits</p>
+              <p>2 outfits</p>
             </li>
             <li>
-            <p>15 edited photos</p>
+              <p>15 edited photos</p>
             </li>
             <li>
-              <p><strong>$325</strong></p>
+              <p>
+                <strong>$325</strong>
+              </p>
             </li>
           </ul>
         </div>
-
       </div>
     </div>
   );

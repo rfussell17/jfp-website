@@ -20,7 +20,6 @@ const Portfolio = () => {
           autoplay: false,
           draggable: true,
           speed: 300,
-   
         },
       },
     ],
@@ -41,8 +40,14 @@ const Portfolio = () => {
   };
 
   // Generate arrays for portrait and landscape images
-  const portraitImages = Array.from({ length: 36 }, (_, i) => `img/portfolio/portrait/${i + 1}.jpg`);
-  const landscapeImages = Array.from({ length: 36 }, (_, i) => `img/portfolio/landscape/${i + 1}.jpg`);
+  const portraitImages = Array.from(
+    { length: 36 },
+    (_, i) => `img/portfolio/portrait/${i + 1}.jpg`
+  );
+  const landscapeImages = Array.from(
+    { length: 36 },
+    (_, i) => `img/portfolio/landscape/${i + 1}.jpg`
+  );
 
   return (
     <div className="portfolio_inner my_carousel gallery_zoom">

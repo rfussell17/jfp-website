@@ -2453,8 +2453,6 @@ a {
   color: #1473e6;
 }
 
-
-
 /*---------------------------------------------------*/
 /*	11) EDINA MEDIA QUERIES (FOR SMALL DEVIVES)
 /*---------------------------------------------------*/
@@ -3092,8 +3090,8 @@ a {
 }
 
 .logo-div {
-margin: 0;
-padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .logo_light {
@@ -3107,37 +3105,3 @@ padding: 0;
   margin: 0;
   padding-bottom: 0;
 }
-
-
-
-// /* Add this CSS to your stylesheet */
-// .my_carousel .item.portrait .image img {
-//   width: auto; /* Adjust based on your requirements */
-//   height: 300px; /* Example height for portrait images */
-// }
-
-// .my_carousel .item.landscape .image {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   height: 300px; /* Match the portrait height to align images vertically */
-// }
-
-// .my_carousel .item.landscape .image img {
-//   width: auto; /* Adjust based on your requirements */
-//   max-height: 200px; /* Example height for landscape images to ensure they are centered */
-// }
-
-
-
-
-// .logo {
-//   width: 100% !important;
-//   padding: 0;
-//   margin: 0;
-//   background-color: red;
-// }
-// .logo_light {
-// background-color: chartreuse;
-// width: 100%;
-// }

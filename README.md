@@ -1,3 +1,1 @@
-# Jonny Fussell Photography 
-
-
+# Jonny Fussell Photography
