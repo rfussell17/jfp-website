@@ -4,12 +4,12 @@ const ModalFour = () => {
   return (
     <div className="popup_informations">
       <div className="image">
-        <img src="img/service/3.jpeg" alt="" />
+        <img src="img/portfolio/landscape/12.jpg" alt="" />
         <div
           className="main"
           style={{
             backgroundImage: `url(${
-              process.env.PUBLIC_URL + "img/service/3.jpeg"
+              process.env.PUBLIC_URL + "img/portfolio/landscape/12.jpg"
             })`,
           }}
         ></div>

@@ -45,8 +45,8 @@ const Portfolio = () => {
     (_, i) => `img/portfolio/portrait/${i + 1}.jpg`
   );
   const landscapeImages = Array.from(
-    { length: 36 },
-    (_, i) => `img/portfolio/landscape/${i + 1}.jpg`
+    { length: 35 },
+    (_, i) => `img/portfolio/landscape/${1 + i + 1}.jpg`
   );
 
   return (
