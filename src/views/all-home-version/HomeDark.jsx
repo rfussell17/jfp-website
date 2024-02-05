@@ -20,7 +20,7 @@ const HomeDark = () => {
           <div className="edina_tm_title">
             <h3>What I Do</h3>
             <p>
-              Booking slots for <strong>2022</strong> are now open - Check out
+              Booking slots for <strong>2024</strong> are now open - Check out
               the many services and packages I provide, and do not hesitate to
               reach out for more information!
             </p>
