@@ -27,8 +27,13 @@ Weddings are my playground – from the pre-ceremony silliness to the first atte
 
 Ready for a chat? Let's make capturing your special moments as fun as trying to convince a kid that bedtime is a good idea.
               </p>
-          
+              <div className="logo-div">
+      <img className="logo_light" src={`img/logo/light.png`} alt="brand" height={200}  />
+      </div>
             </div>
+
+   
+            
            
           </div>
           {/* End leftpart */}

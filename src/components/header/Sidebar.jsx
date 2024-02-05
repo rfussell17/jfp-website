@@ -55,15 +55,7 @@ const Sidebar = () => {
         className={click ? "edina_tm_sidebar menu-open" : "edina_tm_sidebar"}
       >
         <div className="sidebar_inner">
-          <div className="logo">
-
-              {/* <img
-                className="logo_light"
-                src={`img/logo/${logo}.png`}
-                alt="brand"
-              /> */}
-
-          </div>
+ 
           {/* End .logo */}
 
           <div className="menu">
@@ -101,30 +93,8 @@ const Sidebar = () => {
                 ))}
               </ul>
             </ScrollspyNav>
-          </div>
-          {/* End .menu */}
 
-          <div className="author">
-            <div className="inner">
-              {/* <div className="image">
-                <div
-                  className="main"
-                  style={{
-                    backgroundImage: `url(${
-                      process.env.PUBLIC_URL + sidebarFooterContent.avatar
-                    })`,
-                  }}
-                ></div>
-              </div> */}
-              {/* <div className="short">
-                <h3>{sidebarFooterContent.name}</h3>
-                <a href={sidebarFooterContent.emailRef}>
-                  {sidebarFooterContent.email}
-                </a>
-              </div> */}
-            </div>
           </div>
-          {/* End author */}
         </div>
       </div>
     </>
