@@ -1,7 +1,7 @@
 import React from "react";
 import HomeDark from "../views/all-home-version/HomeDark";
 import NotFound from "../views/NotFound";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes as RouterRoutes } from "react-router-dom";
 import ScrollTopBehaviour from "../components/ScrollTopBehaviour";
 
 const Routes = () => {
@@ -9,10 +9,10 @@ const Routes = () => {
     <>
       <Router>
         <ScrollTopBehaviour />
-        <Switch>
-          <Route exact path="/" component={HomeDark} />
-          <Route component={NotFound} />
-        </Switch>
+        <RouterRoutes>
+          <Route path="/" element={<HomeDark />} />
+          <Route path="*" element={<NotFound />} />
+        </RouterRoutes>
       </Router>
     </>
   );

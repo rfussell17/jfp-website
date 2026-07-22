@@ -12,7 +12,7 @@ const Hero = () => {
     //    HERO
     <div className="edina_tm_hero" id="home">
       <div className="content">
-        <div classname="hero-img" data-aos="fade-up" data-aos-duration="1200">
+        <div className="hero-img" data-aos="fade-up" data-aos-duration="1200">
           <img
             className="hero-img-main"
             src={"img/hero/jon2.png"}
