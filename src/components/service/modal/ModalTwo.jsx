@@ -9,7 +9,7 @@ const ModalTwo = () => {
           className="main"
           style={{
             backgroundImage: `url(${
-              process.env.PUBLIC_URL + "img/service/5.jpg"
+              "/img/service/5.jpg"
             })`,
           }}
         ></div>

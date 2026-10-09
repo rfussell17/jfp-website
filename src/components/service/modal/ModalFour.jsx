@@ -9,7 +9,7 @@ const ModalFour = () => {
           className="main"
           style={{
             backgroundImage: `url(${
-              process.env.PUBLIC_URL + "img/portfolio/landscape/12.jpg"
+              "/img/portfolio/landscape/12.jpg"
             })`,
           }}
         ></div>

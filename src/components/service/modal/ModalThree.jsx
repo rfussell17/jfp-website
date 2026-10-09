@@ -9,7 +9,7 @@ const ModalThree = () => {
           className="main"
           style={{
             backgroundImage: `url(${
-              process.env.PUBLIC_URL + "img/service/3.jpg"
+              "/img/service/3.jpg"
             })`,
           }}
         ></div>

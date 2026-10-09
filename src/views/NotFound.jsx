@@ -7,7 +7,7 @@ const NotFound = () => {
       <div
         className="hero bg-image"
         style={{
-          backgroundImage: `url(${process.env.PUBLIC_URL + "img/1.jpg"})`,
+          backgroundImage: `url(${"/img/1.jpg"})`,
         }}
       >
         <div className="content">

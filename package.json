@@ -11,41 +11,22 @@
     "react-modal": "^3.16.3",
     "react-parallax-tilt": "^1.7.333",
     "react-router-dom": "^7.18.1",
-    "react-scripts": "^5.0.1",
     "react-slick": "^0.31.0",
     "react-tooltip": "^6.0.8",
     "react-transition-group": "^4.4.5",
     "sass": "^1.101.5",
     "slick-carousel": "^1.8.1",
-    "testing-library": "^0.0.2",
-    "tsparticles": "^4.3.2",
     "web-vitals": "^6.0.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
-  }
+    "@vitejs/plugin-react": "^6.1.2",
+    "vite": "^8.3.4"
+  },
+  "type": "module"
 }
