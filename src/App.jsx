@@ -4,6 +4,7 @@ import About from "./components/About";
 import Packages from "./components/Packages";
 import Testimonials from "./components/Testimonials";
 import Gallery from "./components/Gallery";
+import FAQ from "./components/FAQ";
 import Inquire from "./components/Inquire";
 import Footer from "./components/Footer";
 
@@ -16,6 +17,7 @@ const App = () => (
       <Packages />
       <Testimonials />
       <Gallery />
+      <FAQ />
       <Inquire />
     </main>
     <Footer />

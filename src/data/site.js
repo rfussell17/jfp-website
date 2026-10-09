@@ -59,3 +59,28 @@ export const testimonials = [
       "I recently had the pleasure of working with Jonny for my engagement photoshoot. His creativity and attention to detail were evident in every shot. With his professionalism and dedication, the final photos exceeded our expectations. I highly recommend him for capturing special moments, as his talent and ability to create a comfortable atmosphere make him an exceptional choice for any photoshoot. Thank you for the amazing work!",
   },
 ];
+
+// Answers only use facts already stated on the site. Add more (deposits,
+// travel, delivery time, how far ahead to book) once Jonny confirms them.
+export const faqs = [
+  {
+    q: "How much does a wedding photographer cost in Kelowna?",
+    a: "Jonny's wedding packages run from $2,000 for 4 hours of coverage to $6,000 for 10 hours to a full day. Bronze is $2,000, Silver is $3,400, Gold is $4,000 and Platinum is $6,000.",
+  },
+  {
+    q: "What is included in every wedding package?",
+    a: "Every wedding package includes a second shooter and a complimentary engagement session, on top of the hours of coverage and the minimum number of edited photos listed for each package.",
+  },
+  {
+    q: "What is documentary wedding photography?",
+    a: "It means capturing your day as it actually happens instead of building stiff, posed moments: the real laugh, the nervous hands before walking down the aisle, the chaos of the reception dance floor.",
+  },
+  {
+    q: "Do you photograph engagements, couples and families too?",
+    a: "Yes. An engagement session is $450, and couples and family sessions are $400 for one hour. Many clients start with engagement photos, then book their wedding, and come back for family photos later.",
+  },
+  {
+    q: "Where is Jonny Fussell Photography based?",
+    a: "Jonny is a wedding photographer based in Kelowna, British Columbia.",
+  },
+];
