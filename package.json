@@ -19,13 +19,16 @@
     "web-vitals": "^6.0.0"
   },
   "scripts": {
-    "start": "vite",
     "dev": "vite",
-    "build": "vite build",
+    "start": "vite",
+    "predev": "node scripts/gallery-manifest.mjs",
+    "prebuild": "node scripts/gallery-manifest.mjs",
+    "build": "vite build && vite build --ssr src/entry-server.jsx --outDir dist-ssr && node scripts/prerender.mjs",
     "preview": "vite preview"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^6.1.2",
+    "image-size": "^2.0.4",
     "vite": "^8.3.4"
   },
   "type": "module"
