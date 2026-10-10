@@ -577,15 +577,35 @@ textarea:focus-visible {
   color: var(--muted);
 }
 
-/* FAQ and Inquire side by side */
+/* FAQ stacked above Inquire; each is title-left, content-right */
 .duo__grid {
   display: grid;
-  gap: clamp(72px, 10vw, 112px) clamp(48px, 7vw, 112px);
-  align-items: start;
+  gap: clamp(72px, 10vw, 112px);
+}
+
+.inquire {
+  padding-top: clamp(72px, 10vw, 112px);
+  border-top: 1px solid #ddd5c5;
 }
 
 @media (min-width: 900px) {
-  .duo__grid {
-    grid-template-columns: 1fr 1fr;
+  .faq,
+  .inquire {
+    display: grid;
+    grid-template-columns: 4fr 7fr;
+    column-gap: clamp(48px, 8vw, 128px);
+    align-items: start;
+  }
+
+  .faq .section__title,
+  .inquire .section__title,
+  .inquire .section__lead {
+    grid-column: 1;
+  }
+
+  .faq__list,
+  .inquire .form {
+    grid-column: 2;
+    grid-row: 1 / span 3;
   }
 }
