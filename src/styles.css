@@ -339,16 +339,33 @@ ul {
 }
 
 /* Testimonials */
-/* Balanced columns: the column count follows the screen width and the cards
-   are shared out evenly, so the last row never ends with a lone card. */
+/* 1, 2 or 3 columns by screen width. Testimonials.jsx hides the last few
+   cards so only whole rows show (keep the breakpoints in sync with that file). */
 .testimonials__grid {
-  columns: 340px;
-  column-gap: clamp(32px, 5vw, 72px);
+  display: grid;
+  gap: clamp(40px, 5vw, 64px) clamp(32px, 5vw, 72px);
+  grid-template-columns: 1fr;
+  align-items: start;
+}
+
+@media (min-width: 720px) {
+  .testimonials__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .testimonials__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .quote {
-  margin: 0 0 clamp(40px, 5vw, 64px);
-  break-inside: avoid;
+  margin: 0;
+}
+
+.quote[hidden] {
+  display: none;
 }
 
 .quote__text {
