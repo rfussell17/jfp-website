@@ -16,9 +16,13 @@ const App = () => (
       <About />
       <Packages />
       <Testimonials />
-      <FAQ />
       <Gallery />
-      <Inquire />
+      <section className="section duo">
+        <div className="container duo__grid">
+          <FAQ />
+          <Inquire />
+        </div>
+      </section>
     </main>
     <Footer />
   </>

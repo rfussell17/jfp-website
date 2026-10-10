@@ -97,8 +97,7 @@ ul {
 
 .section--tint,
 .packages,
-.faq,
-.inquire {
+.duo {
   background: var(--alt);
   border-top-color: #e3dccd;
 }
@@ -398,7 +397,7 @@ ul {
    and every row ends up the same height. One column on phones. */
 .gallery {
   --row: 230px;
-  padding-bottom: clamp(48px, 8vw, 96px);
+  padding-bottom: 0;
 }
 
 .gallery__grid {
@@ -576,4 +575,17 @@ textarea:focus-visible {
   margin: 0 0 1.4em;
   max-width: 36em;
   color: var(--muted);
+}
+
+/* FAQ and Inquire side by side */
+.duo__grid {
+  display: grid;
+  gap: clamp(72px, 10vw, 112px) clamp(48px, 7vw, 112px);
+  align-items: start;
+}
+
+@media (min-width: 900px) {
+  .duo__grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
