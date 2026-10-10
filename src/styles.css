@@ -1,11 +1,11 @@
 :root {
   --ink: #222222;
   --muted: #6b6760;
-  --line: #e4dfd5;
+  --line: #e8e2d6;
   --paper: #fbf9f4;
   --warm: #f1ede4;
-  --accent: #2f4a3a;
-  --sage: #e9eee6;
+  --accent: #1f3d2e;
+  --alt: #f3eee4;
   --maxw: 1440px;
   --serif: "Cormorant Garamond", Georgia, "Times New Roman", serif;
   --sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -99,8 +99,8 @@ ul {
 .packages,
 .faq,
 .inquire {
-  background: var(--sage);
-  border-top-color: #d6ded2;
+  background: var(--alt);
+  border-top-color: #e3dccd;
 }
 
 .section__title {
@@ -295,7 +295,7 @@ ul {
 
 .package__details li {
   padding-block: 0.55em;
-  border-top: 1px solid #cdd6c9;
+  border-top: 1px solid #ddd5c5;
   font-size: 0.95rem;
 }
 
@@ -328,7 +328,7 @@ ul {
   gap: 16px;
   padding-block: 0.45em;
   font-size: 0.92rem;
-  border-bottom: 1px solid #cdd6c9;
+  border-bottom: 1px solid #ddd5c5;
 }
 
 .packages__other em {
@@ -455,7 +455,7 @@ ul {
   width: 100%;
   padding: 0.85em 0;
   border: 0;
-  border-bottom: 1px solid #a9b3a4;
+  border-bottom: 1px solid #b9b09f;
   border-radius: 0;
   background: transparent;
   color: var(--ink);
@@ -539,11 +539,11 @@ textarea:focus-visible {
 
 /* FAQ */
 .faq__item {
-  border-bottom: 1px solid #cdd6c9;
+  border-bottom: 1px solid #ddd5c5;
 }
 
 .faq__item:first-child {
-  border-top: 1px solid #cdd6c9;
+  border-top: 1px solid #ddd5c5;
 }
 
 .faq__item summary {
