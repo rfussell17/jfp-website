@@ -339,15 +339,16 @@ ul {
 }
 
 /* Testimonials */
+/* Balanced columns: the column count follows the screen width and the cards
+   are shared out evenly, so the last row never ends with a lone card. */
 .testimonials__grid {
-  display: grid;
-  gap: clamp(40px, 5vw, 64px) clamp(32px, 5vw, 72px);
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr));
-  align-items: start;
+  columns: 340px;
+  column-gap: clamp(32px, 5vw, 72px);
 }
 
 .quote {
-  margin: 0;
+  margin: 0 0 clamp(40px, 5vw, 64px);
+  break-inside: avoid;
 }
 
 .quote__text {
@@ -393,26 +394,43 @@ ul {
   color: var(--muted);
 }
 
-/* Recent work: justified rows, no cropping. Photos flex to share each row,
-   and every row ends up the same height. One column on phones. */
+/* Recent work: justified rows with no cropping. In the browser the rows are
+   worked out in Gallery.jsx so every row fills the width exactly; photos in a
+   row share it in proportion to their shape, which makes the row one height.
+   The flat layout below is the fallback (server render, no JS) and the
+   single column used on phones. */
 .gallery {
   --row: 230px;
+  --row-max: 360px;
   padding-bottom: 0;
+}
+
+.gallery__rows {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.gallery__row {
+  display: flex;
+  gap: 4px;
+}
+
+.gallery__row .gallery__item {
+  flex: var(--ratio) 1 0;
+  max-width: none;
 }
 
 .gallery__grid {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 4px;
-}
-
-.gallery__grid::after {
-  content: "";
-  flex-grow: 1000000;
 }
 
 .gallery__item {
   flex: calc(var(--ratio) * 100) 1 calc(var(--ratio) * var(--row));
+  max-width: calc(var(--ratio) * var(--row-max));
   min-width: 0;
   background: var(--warm);
 }
@@ -425,12 +443,14 @@ ul {
 @media (max-width: 899px) {
   .gallery {
     --row: 170px;
+    --row-max: 280px;
   }
 }
 
 @media (max-width: 599px) {
   .gallery__item {
     flex-basis: 100%;
+    max-width: none;
   }
 }
 
