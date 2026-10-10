@@ -16,8 +16,8 @@ const App = () => (
       <About />
       <Packages />
       <Testimonials />
-      <Gallery />
       <FAQ />
+      <Gallery />
       <Inquire />
     </main>
     <Footer />

@@ -60,27 +60,35 @@ export const testimonials = [
   },
 ];
 
-// Answers only use facts already stated on the site. Add more (deposits,
-// travel, delivery time, how far ahead to book) once Jonny confirms them.
+// FAQ wording supplied by Jonny. Per the brief, do not add questions about
+// contracts, the second shooter's role, or photo counts.
 export const faqs = [
   {
-    q: "How much does a wedding photographer cost in Kelowna?",
-    a: "Jonny's wedding packages run from $2,000 for 4 hours of coverage to $6,000 for 10 hours to a full day. Bronze is $2,000, Silver is $3,400, Gold is $4,000 and Platinum is $6,000.",
+    q: "How far in advance should I book?",
+    a: "Couples typically book 10 to 12 months ahead, especially for peak summer and early fall Saturdays. I'm currently open and happy to take more recent dates too.",
   },
   {
-    q: "What is included in every wedding package?",
-    a: "Every wedding package includes a second shooter and a complimentary engagement session, on top of the hours of coverage and the minimum number of edited photos listed for each package.",
+    q: "When will I get my photos?",
+    a: "You'll get a sneak peek after the first week, and the full gallery arrives 8 to 10 weeks after the wedding. The timeline is the same year-round.",
   },
   {
-    q: "What is documentary wedding photography?",
-    a: "It means capturing your day as it actually happens instead of building stiff, posed moments: the real laugh, the nervous hands before walking down the aisle, the chaos of the reception dance floor.",
+    q: "How do I book, and how much is the deposit?",
+    a: "A $500 deposit holds your date. The remaining balance is due 7 days before the wedding. I accept cash or e-transfer.",
   },
   {
-    q: "Do you photograph engagements, couples and families too?",
-    a: "Yes. An engagement session is $450, and couples and family sessions are $400 for one hour. Many clients start with engagement photos, then book their wedding, and come back for family photos later.",
+    q: "Do you travel outside Kelowna?",
+    a: "Travel anywhere in the Okanagan is free. Beyond the Okanagan, travel is quoted per booking. Destination weddings are available when you cover my travel and accommodation.",
   },
   {
-    q: "Where is Jonny Fussell Photography based?",
-    a: "Jonny is a wedding photographer based in Kelowna, British Columbia.",
+    q: "What happens if it rains?",
+    a: "I shoot rain or shine. Coverage time is fixed, so we plan the timeline together with a backup for covered locations. If I'm ever unable to make your date, I'll offer a full refund or a replacement photographer.",
+  },
+  {
+    q: "Can I add extra hours?",
+    a: "Yes. Additional hours are $400 each and can be added ahead of time or on the day itself, depending on my availability. Packages can also be tweaked to suit your day.",
+  },
+  {
+    q: "How will I receive my photos, and what can I do with them?",
+    a: "Photos are delivered through an online gallery that stays up for 12 months, and you can download them whenever you like. Print them anywhere you want. You're free to post them online. I just ask that you credit me.",
   },
 ];
