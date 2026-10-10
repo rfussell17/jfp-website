@@ -5,7 +5,7 @@ import { pathToFileURL } from "node:url";
 import { resolve } from "node:path";
 
 const siteUrl = (process.env.URL || "").replace(/\/$/, "");
-const { render, structuredData, llmsTxt } = await import(
+const { render, structuredData, llmsTxt, placeholderNames } = await import(
   pathToFileURL(resolve("dist-ssr/entry-server.js")).href
 );
 
@@ -33,3 +33,8 @@ if (siteUrl) {
 }
 rmSync("dist-ssr", { recursive: true, force: true });
 console.log(`prerender: wrote build/index.html${siteUrl ? ` (site url ${siteUrl})` : " (no URL env set)"}`);
+
+const standIns = placeholderNames();
+if (standIns.length) {
+  console.warn(`\n  WARNING: ${standIns.length} testimonials still use placeholder names: ${standIns.join(", ")}\n  Replace them in src/data/site.js before launch.\n`);
+}

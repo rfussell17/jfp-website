@@ -1,6 +1,9 @@
 import { renderToString } from "react-dom/server";
 import App from "./App";
-import { site, packages, otherSessions, faqs } from "./data/site";
+import { site, packages, otherSessions, faqs, testimonials } from "./data/site";
+
+export const placeholderNames = () =>
+  testimonials.filter((t) => t.placeholderName).map((t) => t.name);
 
 export const render = () => renderToString(<App />);
 

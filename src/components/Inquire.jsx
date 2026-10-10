@@ -23,7 +23,7 @@ const Inquire = () => {
   if (status === "sent") {
     return (
       <section className="section inquire" id="inquire">
-        <div className="container container--narrow">
+        <div className="container split">
           <h2 className="section__title">Thank you</h2>
           <p className="section__lead">
             Your message is in. I'll be in touch soon.
@@ -35,11 +35,13 @@ const Inquire = () => {
 
   return (
     <section className="section inquire" id="inquire">
-      <div className="container container--narrow">
-        <h2 className="section__title">Inquire</h2>
-        <p className="section__lead">
-          Tell me about your day and I'll get back to you.
-        </p>
+      <div className="container split">
+        <div>
+          <h2 className="section__title">Inquire</h2>
+          <p className="section__lead">
+            Tell me about your day and I'll get back to you.
+          </p>
+        </div>
         <form
           name="inquiry"
           method="POST"
