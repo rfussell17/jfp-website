@@ -27,8 +27,8 @@ export const otherSessions = [
   { name: "Family session", detail: "1 hour", price: "$400" },
 ];
 
-// Quotes marked `placeholderName: true` are real wording whose couple names are
-// stand-ins. Replace the names (and remove the flag) before launch.
+// Add `placeholderName: true` to any quote whose name is a stand-in; the build
+// prints a warning listing them until they are replaced.
 export const testimonials = [
   {
     name: "Foster and Devin",
@@ -43,42 +43,37 @@ export const testimonials = [
       "Jonny did an amazing job with our wedding photos! We were on a time crunch and asked him 3 weeks before the date if he could shoot our wedding over the holidays. He gave us a whole day away from his wife and newborn on boxing day which was nothing short of amazing. The photos were spectacular, even though we had a winter wedding in low light and -25 weather. He even stayed outside all day so his lenses wouldn't fog up and he would be ready at a moments notice. If you are looking for a wedding photographer, Jonny is your guy!",
   },
   {
-    name: "Hannah & Ryan",
+    name: "B+N",
     kind: "Wedding",
-    placeholderName: true,
     quote:
       "My husband and I had the most wonderful experience with Jonny as our wedding photographer. He went above and beyond and took the time to meet with us beforehand to discuss inspiration pictures, photography style, locations, and fully invested himself in our vision. On our actual wedding day, Jonny made us feel very comfortable and created a safe space, allowing for the most amazing pictures and best memories! We can't thank or recommend Jonny enough. Don't think twice before booking Jonny for your next event!",
   },
   {
-    name: "Chloe & Mitchell",
+    name: "Jessica & Aaron",
     kind: "Wedding",
-    placeholderName: true,
     quote:
       "We had Jonny shoot our wedding, and we could not be happier with the photos! He is able to capture such authentic moments and really has an eye for creative shots. Jonny was very easy to work with and the quality of the photos exceeded our expectations! We highly recommend Jonny to anyone in need of a wedding photographer. He is professional, talented, and an all-around wonderful person! Thank you, Jonny, for making our special day even more memorable!",
   },
   {
-    name: "Tessa & Liam",
+    name: "Emilie",
     kind: "Wedding",
-    placeholderName: true,
     quote:
       "Jonny is very talented and made our wedding day so special! It felt so natural and fun, like we knew each other for a long time. We love our wedding pictures and we wouldn't do it any differently. Thank you Jonny!",
   },
   {
-    name: "Megan & Owen",
+    name: "Dennis",
     kind: "Wedding",
-    placeholderName: true,
     quote:
       "Jonny is a fantastic photographer and a great person who was easy to communicate with and really worked with us. Not only did he take amazing pictures of us he also took candid pictures of our guest and people enjoying their day so that when we look back on these pictures we get to relive part of that special day. I would highly recommend him to anyone looking for a photographer.",
   },
   {
-    name: "Priya & Marcus",
+    name: "S+C",
     kind: "Engagement and wedding",
-    placeholderName: true,
     quote:
       "We hired Jonny to take our engagement/wedding photos and are we ever happy we chose him. He's amazing to work with and he sure knows how to capture incredible photos and make you feel very comfortable while doing it. Can't recommend him enough! Will definitely be using him in the future. Thanks Jonny !!!!!",
   },
   {
-    name: "Michelle & Daniel",
+    name: "Michelle",
     kind: "Engagement session",
     quote:
       "My fiancé and I just had engagement photos done by Jonny, and we are absolutely over the MOON with our photos! You have to understand, we are NOT comfortable in front of a camera: we're incredibly awkward, never know what to do with our hands or how to stand, and that awkwardness can easily come through in photos. Jonny made the experience SO comfortable and had us laughing the whole time! His prompts were clear and fun, and still got gorgeous candid photos as well. He was able to somehow make us look pretty while still capturing who we are as a couple, and that's something I cannot thank him enough for. Hire this man, you WON'T be disappointed!!",
@@ -90,29 +85,26 @@ export const testimonials = [
       "I can highly recommend booking Jonny for a wedding photoshoot. It was super nice with working Jonny, he went above and beyond and really made us feel comfortable. We went to a lot of different locations and the pictures exceeded our expectations. It was really hard to make a selection of pictures because we loved them all! 100% recommend!",
   },
   {
-    name: "Stephanie & Cameron",
+    name: "Stephanie",
     kind: "Engagement session",
     quote:
       "I recently had the pleasure of working with Jonny for my engagement photoshoot. His creativity and attention to detail were evident in every shot. With his professionalism and dedication, the final photos exceeded our expectations. I highly recommend him for capturing special moments, as his talent and ability to create a comfortable atmosphere make him an exceptional choice for any photoshoot. Thank you for the amazing work!",
   },
   {
-    name: "Aaliyah & Jordan",
+    name: "S+J",
     kind: "Couples session",
-    placeholderName: true,
     quote:
       "We hired Jonny for a couples photo shoot and it was the best decision. He was amazing in terms of not just how amazing the photos turned out but in all aspects such as communication and customer service. He made the shoot for us so comfortable and told us how to pose as we didn't really know how or what poses. His personality was so cheerful and easygoing that it made it so much easier and not awkward. His work is beyond amazing. We love how the photos turned out and we would definitely rebook him for another shoot!",
   },
   {
-    name: "Ashley & Trevor",
+    name: "Jayden",
     kind: "Couples session",
-    placeholderName: true,
     quote:
       "I consider myself the least photogenic person ever but he has this special thing about him that makes you feel comfortable and fully at ease, he gives perfect directions and great ideas for those who might be confused on how to pose. The pictures turned out amazing, especially the silly photos. Cant wait to have another photoshoot with him.",
   },
   {
-    name: "Kyle & Sarah",
+    name: "Gavin & Tamara",
     kind: "Proposal session",
-    placeholderName: true,
     quote:
       "Honestly I don't think there is enough words to describe how amazing Jonny did. I booked him for a proposal photoshoot, not only was it on Mother's Day it was at a place he has never been too. He couldn't meet me up there due to having plans etc… but still showed up only about an hour before us and did such an amazing job on adapting to how the lighting was changing constantly and being in a very unfamiliar area over an hour and half out of town and extremely deep in the bush. If you need a photoshoot done for a very good price Jonny is your guy he makes you feel very comfortable during your shoot and has so many ideas on different shots to take! Definitely booking him for me and my fiancés wedding. Thanks again Jonny.",
   },
