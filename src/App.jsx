@@ -17,9 +17,13 @@ const App = () => (
       <Packages />
       <Testimonials />
       <Gallery />
-      <section className="section duo">
-        <div className="container duo__grid">
+      <section className="section faq-section">
+        <div className="container">
           <FAQ />
+        </div>
+      </section>
+      <section className="section inquire-section">
+        <div className="container">
           <Inquire />
         </div>
       </section>

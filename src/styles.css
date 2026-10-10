@@ -95,9 +95,9 @@ ul {
   border-top: 1px solid var(--line);
 }
 
-.section--tint,
 .packages,
-.duo {
+.gallery,
+.inquire-section {
   background: var(--alt);
   border-top-color: #e3dccd;
 }
@@ -577,17 +577,7 @@ textarea:focus-visible {
   color: var(--muted);
 }
 
-/* FAQ stacked above Inquire; each is title-left, content-right */
-.duo__grid {
-  display: grid;
-  gap: clamp(72px, 10vw, 112px);
-}
-
-.inquire {
-  padding-top: clamp(72px, 10vw, 112px);
-  border-top: 1px solid #ddd5c5;
-}
-
+/* FAQ and Inquire: each is title-left, content-right */
 @media (min-width: 900px) {
   .faq,
   .inquire {
