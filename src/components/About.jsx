@@ -1,4 +1,5 @@
 import portrait from "../assets/jonny.jpg";
+import { srcSet } from "../images";
 import { about } from "../data/site";
 
 const About = () => (
@@ -7,6 +8,8 @@ const About = () => (
       <img
         className="about__portrait"
         src={portrait}
+        srcSet={srcSet("jonny")}
+        sizes="(max-width: 859px) 100vw, 480px"
         width="1080"
         height="1350"
         loading="lazy"

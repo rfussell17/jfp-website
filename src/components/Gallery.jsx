@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import sizes from "../data/gallery-sizes.json";
 import alts from "../data/gallery-alt.json";
+import { srcSet } from "../images";
 
 // Every photo dropped into src/assets/recent-work/<batch>/ shows up here,
 // shuffled together so shoots and portrait/landscape shots are mixed.
@@ -17,6 +18,7 @@ const photos = Object.entries(files)
     return {
       key,
       src,
+      srcSet: srcSet(`recent-work/${key.replace(/\.[^.]+$/, "")}`),
       w,
       h,
       alt: alts[key] || "Documentary wedding photograph by Jonny Fussell, Kelowna, BC",
@@ -116,10 +118,20 @@ const Row = ({ children }) => {
   );
 };
 
+// Tells the browser how wide the photo will show, so it fetches a matching
+// size: the full width on phones, and the row height times the photo's shape
+// on larger screens (the row heights are the two targets in layoutRows).
+const sizesFor = (photo) => {
+  const ratio = photo.w / photo.h;
+  return `(max-width: 599px) 100vw, (max-width: 899px) ${Math.round(170 * ratio)}px, ${Math.round(300 * ratio)}px`;
+};
+
 const Photo = ({ photo, eager }) => (
   <div className="gallery__item" style={{ "--ratio": photo.w / photo.h }}>
     <img
       src={photo.src}
+      srcSet={photo.srcSet}
+      sizes={photo.srcSet ? sizesFor(photo) : undefined}
       width={photo.w}
       height={photo.h}
       alt={photo.alt}

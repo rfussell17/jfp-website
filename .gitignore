@@ -25,3 +25,6 @@ dist-ssr
 
 # full-size originals; the site uses the resized copies in src/assets/recent-work
 /public/img/portfolio/
+
+# resized WebP copies made at build time
+/src/generated/

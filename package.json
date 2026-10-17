@@ -9,14 +9,15 @@
   "scripts": {
     "dev": "vite",
     "start": "vite",
-    "predev": "node scripts/gallery-manifest.mjs",
-    "prebuild": "node scripts/gallery-manifest.mjs",
+    "predev": "node scripts/gallery-manifest.mjs && node scripts/optimize-images.mjs",
+    "prebuild": "node scripts/gallery-manifest.mjs && node scripts/optimize-images.mjs",
     "build": "vite build && vite build --ssr src/entry-server.jsx --outDir dist-ssr && node scripts/prerender.mjs",
     "preview": "vite preview"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^6.1.2",
     "image-size": "^2.0.4",
+    "sharp": "^0.35.5",
     "vite": "^8.3.4"
   },
   "type": "module"

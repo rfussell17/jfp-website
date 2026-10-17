@@ -29,13 +29,24 @@ const faqHtml = readFileSync("build/faq.html", "utf8")
   .replaceAll("__SITE_URL__", siteUrl);
 writeFileSync("build/faq.html", robotsMeta(faqHtml));
 
+// AI crawlers and assistants. "User-agent: *" already allows them, but naming
+// them makes the intent explicit and survives anyone adding a blanket rule later.
+const aiBots = [
+  "GPTBot", "OAI-SearchBot", "ChatGPT-User", // OpenAI
+  "ClaudeBot", "Claude-SearchBot", "Claude-User", "anthropic-ai", // Anthropic
+  "PerplexityBot", "Perplexity-User", // Perplexity
+  "Google-Extended", "Applebot-Extended", // Gemini and Apple Intelligence
+  "Applebot", "Amazonbot", "Meta-ExternalAgent", "DuckAssistBot", "MistralAI-User",
+  "CCBot", "cohere-ai",
+];
+
 // Crawler files. The sitemap needs absolute URLs, so it needs the site URL
 // (Netlify sets URL automatically).
 writeFileSync("build/llms.txt", llmsTxt(siteUrl));
 writeFileSync(
   "build/robots.txt",
   live
-    ? `User-agent: *\nAllow: /\n${siteUrl ? `\nSitemap: ${siteUrl}/sitemap.xml\n` : ""}`
+    ? `User-agent: *\nAllow: /\n\n${aiBots.map((bot) => `User-agent: ${bot}\nAllow: /\n`).join("\n")}${siteUrl ? `\nSitemap: ${siteUrl}/sitemap.xml\n` : ""}`
     : "User-agent: *\nDisallow: /\n"
 );
 if (siteUrl && live) {

@@ -1,10 +1,13 @@
 import heroImage from "../assets/hero.jpg";
+import { srcSet } from "../images";
 
 const Hero = () => (
   <section className="hero" id="top">
     <img
       className="hero__image"
       src={heroImage}
+      srcSet={srcSet("hero")}
+      sizes="100vw"
       width="1800"
       height="1350"
       alt="A bride and groom kissing among wildflowers beside a marina, mountains and stormy skies behind them"
