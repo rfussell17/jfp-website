@@ -13,7 +13,7 @@ const amount = (price) => price.replace(/[^\d.]/g, "");
 
 export const structuredData = (siteUrl, page = "home") => {
   const business = {
-    "@type": "Photographer",
+    "@type": ["LocalBusiness", "Photographer"],
     "@id": `${siteUrl}/#business`,
     name: site.name,
     description:
@@ -57,7 +57,7 @@ export const structuredData = (siteUrl, page = "home") => {
     name: site.name,
     inLanguage: "en-CA",
     ...(siteUrl && { url: siteUrl }),
-    publisher: { "@id": `${siteUrl}/#business` },
+    publisher: { "@type": "LocalBusiness", "@id": `${siteUrl}/#business`, name: site.name },
   };
 
   const faq = {
