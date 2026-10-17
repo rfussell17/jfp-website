@@ -45,14 +45,7 @@
     <meta name="robots" content="index, follow, max-image-preview:large" />
     <meta name="twitter:image" content="__SITE_URL__/og-image.jpg" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Inter:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QE7XJT57PK"></script>
+    <!-- Google tag (gtag.js), loaded after the page has finished so it doesn't slow the first paint -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -60,6 +53,14 @@
       }
       gtag("js", new Date());
       gtag("config", "G-QE7XJT57PK");
+      addEventListener("load", function () {
+        setTimeout(function () {
+          var s = document.createElement("script");
+          s.async = true;
+          s.src = "https://www.googletagmanager.com/gtag/js?id=G-QE7XJT57PK";
+          document.head.appendChild(s);
+        }, 1500);
+      });
     </script>
     <!--structured-data-->
   </head>

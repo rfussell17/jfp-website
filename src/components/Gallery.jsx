@@ -126,7 +126,7 @@ const sizesFor = (photo) => {
   return `(max-width: 599px) 100vw, (max-width: 899px) ${Math.round(170 * ratio)}px, ${Math.round(300 * ratio)}px`;
 };
 
-const Photo = ({ photo, eager }) => (
+const Photo = ({ photo }) => (
   <div className="gallery__item" style={{ "--ratio": photo.w / photo.h }}>
     <img
       src={photo.src}
@@ -135,7 +135,7 @@ const Photo = ({ photo, eager }) => (
       width={photo.w}
       height={photo.h}
       alt={photo.alt}
-      loading={eager ? "eager" : "lazy"}
+      loading="lazy"
       decoding="async"
     />
   </div>
@@ -184,7 +184,6 @@ const Gallery = ({ done, onDone }) => {
     return () => observer.disconnect();
   }, [rows, shown, finished]);
 
-  let index = 0;
   return (
     <section className="section gallery" id="recent-work">
       <div className="container">
@@ -196,7 +195,7 @@ const Gallery = ({ done, onDone }) => {
             {rows.slice(0, visible).map((row) => (
               <Row key={row[0].key}>
                 {row.map((p) => (
-                  <Photo key={p.key} photo={p} eager={index++ < 4} />
+                  <Photo key={p.key} photo={p} />
                 ))}
               </Row>
             ))}
@@ -204,7 +203,7 @@ const Gallery = ({ done, onDone }) => {
         ) : (
           <div className="gallery__grid">
             {photos.slice(0, FLAT_COUNT).map((p, i) => (
-              <Photo key={p.key} photo={p} eager={i < 4} />
+              <Photo key={p.key} photo={p} />
             ))}
           </div>
         )}

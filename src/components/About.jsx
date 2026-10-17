@@ -9,7 +9,7 @@ const About = () => (
         className="about__portrait"
         src={portrait}
         srcSet={srcSet("jonny")}
-        sizes="(max-width: 859px) 100vw, 480px"
+        sizes="(max-width: 480px) 100vw, 480px"
         width="1080"
         height="1350"
         loading="lazy"
