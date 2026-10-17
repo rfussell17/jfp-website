@@ -18,7 +18,7 @@ export const structuredData = (siteUrl, page = "home") => {
     name: site.name,
     description:
       "Documentary wedding photographer in Kelowna, BC. A second shooter and an engagement session are included in every wedding package.",
-    ...(siteUrl && { url: siteUrl, image: `${siteUrl}/og-image.jpg` }),
+    ...(siteUrl && { url: siteUrl, image: `${siteUrl}/og-image.jpg`, logo: `${siteUrl}/logo.png` }),
     telephone: site.phone,
     email: site.email,
     founder: { "@type": "Person", name: "Jonny Fussell", jobTitle: "Wedding photographer" },

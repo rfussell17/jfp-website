@@ -7,11 +7,12 @@ export default defineConfig({
     {
       // In dev, serve the questions page at /faq like Netlify does.
       name: "faq-route",
-      configureServer: (server) =>
+      configureServer(server) {
         server.middlewares.use((req, _res, next) => {
           if (req.url === "/faq") req.url = "/faq.html";
           next();
-        }),
+        });
+      },
     },
   ],
   publicDir: "static",
