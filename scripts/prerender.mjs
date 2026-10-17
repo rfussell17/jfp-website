@@ -4,6 +4,12 @@ import { readFileSync, writeFileSync, rmSync } from "node:fs";
 import { pathToFileURL } from "node:url";
 import { resolve } from "node:path";
 
+// Netlify sets CONTEXT to "production" only for the live site. Previews and
+// branch deploys must not be indexed, or they compete with the real pages.
+const live = !process.env.CONTEXT || process.env.CONTEXT === "production";
+const indexable = "index, follow, max-image-preview:large";
+const robotsMeta = (html) => (live ? html : html.replace(indexable, "noindex, nofollow"));
+
 const siteUrl = (process.env.URL || "").replace(/\/$/, "");
 const { render, renderFaq, structuredData, llmsTxt, placeholderNames } = await import(
   pathToFileURL(resolve("dist-ssr/entry-server.js")).href
@@ -15,22 +21,24 @@ const html = template
   .replace("<!--structured-data-->", structuredData(siteUrl))
   .replaceAll("__SITE_URL__", siteUrl);
 
-writeFileSync("build/index.html", html);
+writeFileSync("build/index.html", robotsMeta(html));
 
 const faqHtml = readFileSync("build/faq.html", "utf8")
   .replace("<!--app-html-->", renderFaq())
   .replace("<!--structured-data-->", structuredData(siteUrl, "faq"))
   .replaceAll("__SITE_URL__", siteUrl);
-writeFileSync("build/faq.html", faqHtml);
+writeFileSync("build/faq.html", robotsMeta(faqHtml));
 
 // Crawler files. The sitemap needs absolute URLs, so it needs the site URL
 // (Netlify sets URL automatically).
 writeFileSync("build/llms.txt", llmsTxt(siteUrl));
 writeFileSync(
   "build/robots.txt",
-  `User-agent: *\nAllow: /\n${siteUrl ? `\nSitemap: ${siteUrl}/sitemap.xml\n` : ""}`
+  live
+    ? `User-agent: *\nAllow: /\n${siteUrl ? `\nSitemap: ${siteUrl}/sitemap.xml\n` : ""}`
+    : "User-agent: *\nDisallow: /\n"
 );
-if (siteUrl) {
+if (siteUrl && live) {
   const today = new Date().toISOString().slice(0, 10);
   writeFileSync(
     "build/sitemap.xml",
