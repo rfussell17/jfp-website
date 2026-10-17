@@ -1,15 +1,17 @@
 import { renderToString } from "react-dom/server";
 import App from "./App";
+import FaqPage from "./FaqPage";
 import { site, packages, otherSessions, faqs, testimonials } from "./data/site";
 
 export const placeholderNames = () =>
   testimonials.filter((t) => t.placeholderName).map((t) => t.name);
 
 export const render = () => renderToString(<App />);
+export const renderFaq = () => renderToString(<FaqPage />);
 
 const amount = (price) => price.replace(/[^\d.]/g, "");
 
-export const structuredData = (siteUrl) => {
+export const structuredData = (siteUrl, page = "home") => {
   const business = {
     "@type": "Photographer",
     "@id": `${siteUrl}/#business`,
@@ -69,7 +71,7 @@ export const structuredData = (siteUrl) => {
 
   return `<script type="application/ld+json">${JSON.stringify({
     "@context": "https://schema.org",
-    "@graph": [business, webpage, faq],
+    "@graph": page === "faq" ? [business, webpage, faq] : [business, webpage],
   })}</script>`;
 };
 

@@ -5,7 +5,7 @@ import { pathToFileURL } from "node:url";
 import { resolve } from "node:path";
 
 const siteUrl = (process.env.URL || "").replace(/\/$/, "");
-const { render, structuredData, llmsTxt, placeholderNames } = await import(
+const { render, renderFaq, structuredData, llmsTxt, placeholderNames } = await import(
   pathToFileURL(resolve("dist-ssr/entry-server.js")).href
 );
 
@@ -16,6 +16,12 @@ const html = template
   .replaceAll("__SITE_URL__", siteUrl);
 
 writeFileSync("build/index.html", html);
+
+const faqHtml = readFileSync("build/faq.html", "utf8")
+  .replace("<!--app-html-->", renderFaq())
+  .replace("<!--structured-data-->", structuredData(siteUrl, "faq"))
+  .replaceAll("__SITE_URL__", siteUrl);
+writeFileSync("build/faq.html", faqHtml);
 
 // Crawler files. The sitemap needs absolute URLs, so it needs the site URL
 // (Netlify sets URL automatically).
@@ -28,7 +34,7 @@ if (siteUrl) {
   const today = new Date().toISOString().slice(0, 10);
   writeFileSync(
     "build/sitemap.xml",
-    `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n  <url><loc>${siteUrl}/</loc><lastmod>${today}</lastmod></url>\n</urlset>\n`
+    `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n  <url><loc>${siteUrl}/</loc><lastmod>${today}</lastmod></url>\n  <url><loc>${siteUrl}/faq</loc><lastmod>${today}</lastmod></url>\n</urlset>\n`
   );
 }
 rmSync("dist-ssr", { recursive: true, force: true });

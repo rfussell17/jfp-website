@@ -96,8 +96,7 @@ ul {
 }
 
 .packages,
-.gallery,
-.inquire-section {
+.gallery {
   background: var(--alt);
   border-top-color: #e3dccd;
 }
@@ -216,7 +215,7 @@ ul {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 50% 38%;
+  object-position: 50% 42%;
 }
 
 .hero__shade {
@@ -411,14 +410,14 @@ ul {
   color: var(--muted);
 }
 
-/* Recent work: justified rows with no cropping. In the browser the rows are
-   worked out in Gallery.jsx so every row fills the width exactly; photos in a
-   row share it in proportion to their shape, which makes the row one height.
-   The flat layout below is the fallback (server render, no JS) and the
-   single column used on phones. */
+/* Recent work: justified rows with no cropping, loading more as you scroll.
+   In the browser the rows are worked out in Gallery.jsx so every row fills the
+   width exactly; photos in a row share it in proportion to their shape, which
+   makes the row one height. The flat layout below is the fallback (server
+   render, no JS). */
 .gallery {
-  --row: 230px;
-  --row-max: 360px;
+  --row: 300px;
+  --row-max: 460px;
   padding-bottom: 0;
 }
 
@@ -431,6 +430,26 @@ ul {
 .gallery__row {
   display: flex;
   gap: 4px;
+}
+
+/* Only hidden once JS is running to reveal it again. */
+.js .gallery__rows .gallery__row {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.js .gallery__rows .gallery__row--in {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .js .gallery__rows .gallery__row {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 }
 
 .gallery__row .gallery__item {
@@ -457,6 +476,10 @@ ul {
   height: auto;
 }
 
+.gallery__end {
+  height: 1px;
+}
+
 @media (max-width: 899px) {
   .gallery {
     --row: 170px;
@@ -468,6 +491,37 @@ ul {
   .gallery__item {
     flex-basis: 100%;
     max-width: none;
+  }
+}
+
+/* With JS, the contact form waits until the gallery has run out of photos. */
+.js .inquire-section--waiting {
+  display: none;
+}
+
+/* Questions page */
+.faq-page {
+  padding-top: clamp(48px, 8vw, 96px);
+}
+
+.faq__intro .section__lead {
+  max-width: 24em;
+}
+
+.faq__contact {
+  margin: 1.2em 0 0;
+  max-width: 24em;
+  color: var(--muted);
+}
+
+.faq__contact a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 899px) {
+  .faq__intro {
+    margin-bottom: 32px;
   }
 }
 
@@ -625,6 +679,7 @@ textarea:focus-visible {
   }
 
   .faq .section__title,
+  .faq__intro,
   .inquire .section__title,
   .inquire .section__lead {
     grid-column: 1;

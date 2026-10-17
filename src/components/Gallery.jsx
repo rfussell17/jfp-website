@@ -2,8 +2,8 @@ import { useEffect, useRef, useState } from "react";
 import sizes from "../data/gallery-sizes.json";
 import alts from "../data/gallery-alt.json";
 
-// Every photo dropped into src/assets/recent-work/<batch>/ shows up here.
-// Newest batch folder first; photos within a batch in filename order.
+// Every photo dropped into src/assets/recent-work/<batch>/ shows up here,
+// shuffled together so shoots and portrait/landscape shots are mixed.
 const files = import.meta.glob("../assets/recent-work/*/*.{jpg,jpeg,png,webp}", {
   eager: true,
   query: "?url",
@@ -28,15 +28,34 @@ const photos = Object.entries(files)
     return batchB.localeCompare(batchA) || fileA.localeCompare(fileB, undefined, { numeric: true });
   });
 
+// Shuffle with a fixed seed: the order looks random but is the same every load,
+// so the server render and the browser agree. Change the seed for a new mix.
+const seeded = (seed) => () => {
+  seed = (seed + 0x6d2b79f5) | 0;
+  let t = Math.imul(seed ^ (seed >>> 15), 1 | seed);
+  t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+  return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+};
+const random = seeded(7);
+for (let i = photos.length - 1; i > 0; i--) {
+  const j = Math.floor(random() * (i + 1));
+  [photos[i], photos[j]] = [photos[j], photos[i]];
+}
+
 const GAP = 4;
 const MIN_WIDTH = 600; // below this the gallery is a single column of big photos
+const FIRST_ROWS = 4; // rows shown at first
+const MORE_ROWS = 3; // rows added each time you near the bottom
+const FLAT_COUNT = 24; // photos in the server-rendered, no-JS version
 const ratios = photos.map((p) => p.w / p.h);
 
-// Splits the photos into rows so that every row, the last one included, fills
-// the full width. Picks the break points that keep all rows closest to the
-// target height, so no row ends up much taller or shorter than the rest.
+// Splits every photo into rows so that each row, the last included, fills the
+// full width. Picks the break points that keep all rows closest to the
+// target height. The whole set is laid out once and then revealed row by row,
+// so rows already on screen never reshuffle as more arrive.
 const layoutRows = (width) => {
-  const target = width < 900 ? 170 : 230;
+  if (width < MIN_WIDTH) return photos.map((p) => [p]);
+  const target = width < 900 ? 170 : 300;
   const total = ratios.reduce((a, b) => a + b, 0);
   const count = ratios.length;
   const rowCount = Math.min(count, Math.max(1, Math.round((total * target) / width)));
@@ -73,31 +92,57 @@ const layoutRows = (width) => {
   return rows;
 };
 
-const Photo = ({ photo, index }) => (
+// A row fades and rises into place the first time it scrolls into view.
+const Row = ({ children }) => {
+  const el = useRef(null);
+  const [seen, setSeen] = useState(false);
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setSeen(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: "0px 0px -8% 0px" }
+    );
+    observer.observe(el.current);
+    return () => observer.disconnect();
+  }, []);
+  return (
+    <div ref={el} className={`gallery__row${seen ? " gallery__row--in" : ""}`}>
+      {children}
+    </div>
+  );
+};
+
+const Photo = ({ photo, eager }) => (
   <div className="gallery__item" style={{ "--ratio": photo.w / photo.h }}>
     <img
       src={photo.src}
       width={photo.w}
       height={photo.h}
       alt={photo.alt}
-      loading={index < 2 ? "eager" : "lazy"}
+      loading={eager ? "eager" : "lazy"}
       decoding="async"
     />
   </div>
 );
 
-const Gallery = () => {
+// Endless-scroll gallery: more rows load as you near the bottom. When the last
+// photo is in, onDone tells the page to show the contact form; `done` (set
+// when someone jumps straight to the form) loads everything at once.
+const Gallery = ({ done, onDone }) => {
   const ref = useRef(null);
-  // null = plain CSS layout (server render, no JS, phones); otherwise the rows.
+  const sentinel = useRef(null);
+  // null = plain CSS layout (server render, no JS); otherwise the rows.
   const [rows, setRows] = useState(null);
+  const [shown, setShown] = useState(FIRST_ROWS);
 
   useEffect(() => {
     const el = ref.current;
     let frame;
-    const update = () => {
-      const width = el.clientWidth;
-      setRows(width < MIN_WIDTH ? null : layoutRows(width));
-    };
+    const update = () => setRows(layoutRows(el.clientWidth));
     const observer = new ResizeObserver(() => {
       cancelAnimationFrame(frame);
       frame = requestAnimationFrame(update);
@@ -110,6 +155,23 @@ const Gallery = () => {
     };
   }, []);
 
+  const visible = rows ? (done ? rows.length : Math.min(shown, rows.length)) : 0;
+  const finished = rows && visible >= rows.length;
+
+  useEffect(() => {
+    if (finished) onDone();
+  }, [finished]);
+
+  useEffect(() => {
+    if (!rows || finished) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => entry.isIntersecting && setShown((n) => n + MORE_ROWS),
+      { rootMargin: "1200px 0px" }
+    );
+    observer.observe(sentinel.current);
+    return () => observer.disconnect();
+  }, [rows, shown, finished]);
+
   let index = 0;
   return (
     <section className="section gallery" id="recent-work">
@@ -119,21 +181,22 @@ const Gallery = () => {
       <div ref={ref}>
         {rows ? (
           <div className="gallery__rows">
-            {rows.map((row) => (
-              <div className="gallery__row" key={row[0].key}>
+            {rows.slice(0, visible).map((row) => (
+              <Row key={row[0].key}>
                 {row.map((p) => (
-                  <Photo key={p.key} photo={p} index={index++} />
+                  <Photo key={p.key} photo={p} eager={index++ < 4} />
                 ))}
-              </div>
+              </Row>
             ))}
           </div>
         ) : (
           <div className="gallery__grid">
-            {photos.map((p, i) => (
-              <Photo key={p.key} photo={p} index={i} />
+            {photos.slice(0, FLAT_COUNT).map((p, i) => (
+              <Photo key={p.key} photo={p} eager={i < 4} />
             ))}
           </div>
         )}
+        <div ref={sentinel} className="gallery__end" />
       </div>
     </section>
   );

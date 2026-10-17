@@ -5,9 +5,9 @@ const Hero = () => (
     <img
       className="hero__image"
       src={heroImage}
-      width="1080"
-      height="566"
-      alt="A wedding party dancing in a circle around a bride and groom sharing a kiss"
+      width="2400"
+      height="1600"
+      alt="A bride and groom kissing among wildflowers beside a marina, mountains and stormy skies behind them"
       fetchPriority="high"
     />
     <div className="hero__shade" />
