@@ -4,3 +4,9 @@
 
 [build.environment]
   NODE_VERSION = "22"
+
+# Serve the questions page at /faq
+[[redirects]]
+  from = "/faq"
+  to = "/faq.html"
+  status = 200

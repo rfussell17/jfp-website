@@ -19,7 +19,7 @@ const Header = ({ home = false, onInquire }) => {
             {l.label}
           </a>
         ))}
-        <a href="/faq.html" aria-current={home ? undefined : "page"}>
+        <a href="/faq" aria-current={home ? undefined : "page"}>
           FAQ
         </a>
       </nav>

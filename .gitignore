@@ -22,3 +22,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 dist-ssr
+
+# full-size originals; the site uses the resized copies in src/assets/recent-work
+/public/img/portfolio/
