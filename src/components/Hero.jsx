@@ -1,4 +1,4 @@
-import heroImage from "../assets/hero.jpg";
+import heroImage from "../assets/hero.webp";
 import { srcSet } from "../images";
 
 const Hero = () => (

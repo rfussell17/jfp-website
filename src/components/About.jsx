@@ -1,4 +1,4 @@
-import portrait from "../assets/jonny.jpg";
+import portrait from "../assets/jonny.webp";
 import { srcSet } from "../images";
 import { about } from "../data/site";
 

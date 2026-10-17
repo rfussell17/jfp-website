@@ -49,6 +49,6 @@ Absolute URLs for it are built from Netlify's `URL` environment variable.
 - `static/` is what gets published as-is: favicons, `og-image.jpg`, logo files,
   `manifest.webmanifest`, the 404 page and a `_headers` file.
 - `brand/` holds the original logo files (dark and light). Not published.
-- `src/assets/hero.jpg` and `src/assets/jonny.jpg` are the home page photos.
+- `src/assets/hero.webp` and `src/assets/jonny.webp` are the home page photos.
 - Preview deploys and branch deploys are marked "noindex" automatically; only
   the production deploy can be indexed.

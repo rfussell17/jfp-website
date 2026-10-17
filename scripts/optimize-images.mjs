@@ -23,8 +23,8 @@ for (const batch of readdirSync(root).filter((d) => statSync(join(root, d)).isDi
     queue(join(root, batch, file), `src/generated/recent-work/${batch}/${basename(file, extname(file))}`, [480, 960, 1800]);
   }
 }
-queue("src/assets/hero.jpg", "src/generated/hero", [800, 1280, 1800]);
-queue("src/assets/jonny.jpg", "src/generated/jonny", [540, 1080]);
+queue("src/assets/hero.webp", "src/generated/hero", [800, 1280, 1800]);
+queue("src/assets/jonny.webp", "src/generated/jonny", [540, 1080]);
 mkdirSync("src/generated", { recursive: true });
 
 let made = 0;
