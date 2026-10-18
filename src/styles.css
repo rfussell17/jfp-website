@@ -458,7 +458,7 @@ ul {
 }
 
 .gallery__row .gallery__item {
-  flex: var(--ratio) 1 0;
+  flex: calc(var(--ratio) * 1000) 1 0;
   max-width: none;
 }
 
