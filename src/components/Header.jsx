@@ -1,12 +1,18 @@
 const links = [
   { hash: "about", label: "About" },
   { hash: "packages", label: "Pricing" },
-  { hash: "testimonials", label: "Kind words" },
   { hash: "recent-work", label: "Recent work" },
 ];
 
+// Separate pages, in the order they show in the nav.
+const pages = [
+  { id: "testimonials", href: "/testimonials", label: "Kind words" },
+  { id: "faq", href: "/faq", label: "FAQ" },
+];
+
 // home: this is the one-page home site; elsewhere links go back to it.
-const Header = ({ home = false, onInquire }) => {
+// current: which separate page this is, if any.
+const Header = ({ home = false, current, onInquire }) => {
   const base = home ? "" : "/";
   return (
     <header className="header">
@@ -19,9 +25,11 @@ const Header = ({ home = false, onInquire }) => {
             {l.label}
           </a>
         ))}
-        <a href="/faq" aria-current={home ? undefined : "page"}>
-          FAQ
-        </a>
+        {pages.map((p) => (
+          <a key={p.id} href={p.href} aria-current={current === p.id ? "page" : undefined}>
+            {p.label}
+          </a>
+        ))}
       </nav>
       <a
         className="button button--small"

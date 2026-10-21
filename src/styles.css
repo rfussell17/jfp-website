@@ -96,7 +96,7 @@ ul {
 }
 
 .packages,
-.gallery {
+.inquire-section {
   background: var(--alt);
   border-top-color: #e3dccd;
 }
@@ -342,7 +342,32 @@ ul {
   margin: 56px 0 0;
 }
 
-/* Testimonials */
+/* Testimonials. On the home site they're gone; this is the /testimonials page. */
+.testimonials--page {
+  padding-top: clamp(48px, 8vw, 96px);
+}
+
+.testimonials__lead {
+  max-width: 28em;
+  margin-bottom: clamp(40px, 6vw, 72px);
+}
+
+.testimonials__more {
+  margin: 0;
+  color: var(--muted);
+}
+
+.testimonials__more a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.inquire-cta {
+  padding-block: clamp(32px, 5vw, 56px);
+  background: var(--alt);
+  border-top-color: #e3dccd;
+}
+
 /* 1, 2 or 3 columns by screen width. Testimonials.jsx hides the last few
    cards so only whole rows show (keep the breakpoints in sync with that file). */
 .testimonials__grid {

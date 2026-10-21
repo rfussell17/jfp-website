@@ -1,6 +1,7 @@
 import { renderToString } from "react-dom/server";
 import App from "./App";
 import FaqPage from "./FaqPage";
+import TestimonialsPage from "./TestimonialsPage";
 import { site, packages, otherSessions, faqs, testimonials } from "./data/site";
 
 export const placeholderNames = () =>
@@ -8,6 +9,7 @@ export const placeholderNames = () =>
 
 export const render = () => renderToString(<App />);
 export const renderFaq = () => renderToString(<FaqPage />);
+export const renderTestimonials = () => renderToString(<TestimonialsPage />);
 
 const amount = (price) => price.replace(/[^\d.]/g, "");
 

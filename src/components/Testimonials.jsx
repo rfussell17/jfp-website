@@ -40,15 +40,24 @@ const Quote = ({ name, kind, quote, hidden }) => {
   );
 };
 
-const Testimonials = () => {
+const Testimonials = ({ page = false }) => {
   const columns = useColumns();
   // Only show whole rows so the last row is never a lone card. The few left
   // over stay in the page, hidden, and appear when the screen size changes.
   const visible = columns ? Math.floor(testimonials.length / columns) * columns : testimonials.length;
   return (
-    <section className="section testimonials" id="testimonials">
+    <section className={`section testimonials${page ? " testimonials--page" : ""}`} id="testimonials">
       <div className="container">
-        <h2 className="section__title">Kind words</h2>
+        {page ? (
+          <h1 className="section__title">Kind words</h1>
+        ) : (
+          <h2 className="section__title">Kind words</h2>
+        )}
+        {page && (
+          <p className="section__lead testimonials__lead">
+            Notes from couples and families I've had the pleasure of photographing.
+          </p>
+        )}
         <div className="testimonials__grid">
           {testimonials.map((t, i) => (
             <Quote key={t.name} {...t} hidden={i >= visible} />

@@ -1,7 +1,7 @@
 # Jonny Fussell Photography
 
-Wedding photography site built with React + Vite: a one-page home site plus a
-separate questions page (`/faq`). Both pages are pre-rendered at build time, so
+Wedding photography site built with React + Vite: a one-page home site plus two
+separate pages (`/faq` and `/testimonials`). All pages are pre-rendered at build time, so
 search engines and link previews see the real content.
 
 ## Commands

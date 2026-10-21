@@ -11,7 +11,7 @@ const indexable = "index, follow, max-image-preview:large";
 const robotsMeta = (html) => (live ? html : html.replace(indexable, "noindex, nofollow"));
 
 const siteUrl = (process.env.URL || "").replace(/\/$/, "");
-const { render, renderFaq, structuredData, llmsTxt, placeholderNames } = await import(
+const { render, renderFaq, renderTestimonials, structuredData, llmsTxt, placeholderNames } = await import(
   pathToFileURL(resolve("dist-ssr/entry-server.js")).href
 );
 
@@ -28,6 +28,12 @@ const faqHtml = readFileSync("build/faq.html", "utf8")
   .replace("<!--structured-data-->", structuredData(siteUrl, "faq"))
   .replaceAll("__SITE_URL__", siteUrl);
 writeFileSync("build/faq.html", robotsMeta(faqHtml));
+
+const testimonialsHtml = readFileSync("build/testimonials.html", "utf8")
+  .replace("<!--app-html-->", renderTestimonials())
+  .replace("<!--structured-data-->", structuredData(siteUrl))
+  .replaceAll("__SITE_URL__", siteUrl);
+writeFileSync("build/testimonials.html", robotsMeta(testimonialsHtml));
 
 // AI crawlers and assistants. "User-agent: *" already allows them, but naming
 // them makes the intent explicit and survives anyone adding a blanket rule later.
@@ -53,7 +59,7 @@ if (siteUrl && live) {
   const today = new Date().toISOString().slice(0, 10);
   writeFileSync(
     "build/sitemap.xml",
-    `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n  <url><loc>${siteUrl}/</loc><lastmod>${today}</lastmod></url>\n  <url><loc>${siteUrl}/faq</loc><lastmod>${today}</lastmod></url>\n</urlset>\n`
+    `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n  <url><loc>${siteUrl}/</loc><lastmod>${today}</lastmod></url>\n  <url><loc>${siteUrl}/faq</loc><lastmod>${today}</lastmod></url>\n  <url><loc>${siteUrl}/testimonials</loc><lastmod>${today}</lastmod></url>\n</urlset>\n`
   );
 }
 rmSync("dist-ssr", { recursive: true, force: true });

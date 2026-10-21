@@ -16,7 +16,7 @@ const intro = (
 
 const FaqPage = () => (
   <>
-    <Header />
+    <Header current="faq" />
     <main>
       <section className="section faq-section faq-page">
         <div className="container">

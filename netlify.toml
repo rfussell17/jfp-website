@@ -10,3 +10,9 @@
   from = "/faq"
   to = "/faq.html"
   status = 200
+
+# Serve the testimonials page at /testimonials
+[[redirects]]
+  from = "/testimonials"
+  to = "/testimonials.html"
+  status = 200
