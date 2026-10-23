@@ -183,6 +183,73 @@ ul {
   margin-left: auto;
 }
 
+/* Phones: Inquire stays in the bar next to the burger; the rest drops down. */
+.header > .button {
+  margin-left: auto;
+}
+
+.header__nav.is-open {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 8px var(--gutter) 16px;
+  background: var(--paper);
+  border-bottom: 1px solid var(--line);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+.header__nav.is-open a {
+  padding: 16px 0;
+  font-size: 0.82rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.header__nav.is-open a:last-child {
+  border-bottom: 0;
+}
+
+.header__nav a[aria-current="page"] {
+  color: var(--accent);
+}
+
+.header__toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 44px;
+  height: 44px;
+  margin-right: -10px;
+  padding: 0 10px;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.header__toggle span {
+  display: block;
+  height: 2px;
+  background: var(--ink);
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.header__toggle.is-open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.header__toggle.is-open span:nth-child(2) {
+  opacity: 0;
+}
+
+.header__toggle.is-open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
 .header__nav a {
   font-size: 0.74rem;
   letter-spacing: 0.14em;
@@ -199,6 +266,14 @@ ul {
 @media (min-width: 760px) {
   .header__nav {
     display: flex;
+  }
+
+  .header__toggle {
+    display: none;
+  }
+
+  .header > .button {
+    margin-left: 0;
   }
 }
 
